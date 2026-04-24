@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            /* border: 2px solid; */
+            position: fixed;
+            top: 0;
+            left: 0px;
+            width: 100%;
+            background-color: lightcoral;
+            height: 10vh;
+            padding: 0px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            font: 1em sans-serif;
+
+
+        }
+
+        .logo {
+            text-decoration: none;
+            font-weight: 10px;
+
+        }
+
+        #cart-icon {
+            position: relative;
+            cursor: pointer;
+        }
+
+
+        .add-f1 {
+            font-size: 25px;
+            color: black;
+        }
+
+        .add-to-cart {
+            position: absolute;
+            top: -8px;
+            right: -10px;
+            width: 18px;
+            height: 18px;
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: red;
+            color: white;
+        }
+
+        .shop {
+            padding: 80px 6% 30px;
+        }
+
+        .section-title {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .product-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+        }
+
+        .product-box .image-box {
+            display: flex;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        .image-box {
+            width: 100%;
+            height: 350px;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            transition: 0.5s ease;
+        }
+
+        .product-box:hover .image-box img {
+            transform: scale(1.1);
+        }
+
+
+        .product-box {
+            padding: 10px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product-title {
+            font-size: 20px;
+            margin-top: 12px;
+        }
+
+        .price-and-cart {
+            margin-top: 14px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        .add-cart {
+            font-size: 25px;
+            color: black;
+            cursor: pointer;
+        }
+
+       .cart-items{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 100;
+        background-color: white;
+        width: 350px;
+        height: 200%;
+        padding: 60px 18px 0px;
+       }
+
+       .cart-title{
+        font-size: 28px;
+        text-align: center;
+       }
+
+       .cart-box{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        
+       }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="" class="logo">Ecommerce</a>
+        <div id="cart-icon">
+            <i class="fa-solid fa-bag-shopping add-f1"></i>
+            <span class="cart-item-count add-to-cart">5</span>
+        </div>
+    </nav>
+
+
+    <div class="cart-items">
+        <div class="cart-title">
+            <div class="cart-content">
+                <div class="cart-box">
+                    <img src="white.jpg" alt="">
+                    <div class="cart-details">
+                        <h2 class="cart-product-title">Royal White T-Shirt</h2>
+                        <span class="cart-price">$200</span>
+                        <div class="cart-quantity">
+                            <button id="decrement">-</button>
+                            <span id="number">1</span>
+                            <button id="increment">+</button>
+                        </div>
+                    </div>
+                    <i class="ri-delete-bin-line"></i>
+                    <!-- <i class="ri-close-line"></i> -->
+
+                </div>
+            </div>
+
+            <div class="total">
+                <div class="total-title">Total :</div>
+                <div class="total-price">$0</div>
+            </div>
+            <i class="ri-close-line close-cart"></i>
+
+        </div>
+
+    </div>
+
+
+
+
+    <section class="shop">
+        <h1 class="section-title">Shop Products</h1>
+        <div class="product-content">
+            <div class="product-box">
+                <div class="image-box">
+                    <img src="white.jpg" alt="" height="250px" width="250px">
+                </div>
+                <h2 class="product-title">Royal White T-Shirt</h2>
+                <div class="price-and-cart">
+                    <span class="price">$200</span>
+                    <i class="ri-shopping-bag-fill add-cart"></i>
+                </div>
+            </div>
+
+
+
+            <div class="product-box">
+                <div class="image-box">
+                    <img src="black1.webp" alt="" height="250px" width="250px">
+                </div>
+                <h2 class="product-title">Midnight Black Slim Fit</h2>
+                <div class="price-and-cart">
+                    <span class="price">$500</span>
+                    <i class="ri-shopping-bag-fill add-cart"></i>
+                </div>
+            </div>
+
+
+            <div class="product-box">
+                <div class="image-box">
+                    <img src="blue.jpg" alt="" height="250px" width="250px">
+                </div>
+                <h2 class="product-title">Royal Blue T-Shirt</h2>
+                <div class="price-and-cart">
+                    <span class="price">$300</span>
+                    <i class="ri-shopping-bag-fill add-cart"></i>
+                </div>
+            </div>
+
+
+            <div class="product-box">
+                <div class="image-box">
+                    <img src="pink.webp" alt="" height="250px" width="250px">
+                </div>
+                <h2 class="product-title">Blush Pink Comfort Wear</h2>
+                <div class="price-and-cart">
+                    <span class="price">$799</span>
+                    <i class="ri-shopping-bag-fill add-cart"></i>
+                </div>
+            </div>
+
+
+
+            <div class="product-box">
+                <div class="image-box">
+                    <img src="red.jpg" alt="" height="250px" width="250px">
+                </div>
+                <h2 class="product-title">Crimson Red Street Tee</h2>
+                <div class="price-and-cart">
+                    <span class="price">$329</span>
+                    <i class="ri-shopping-bag-fill add-cart"></i>
+                </div>
+            </div>
+
+
+
+            <div class="product-box">
+                <div class="image-box">
+                    <img src="orange.jpg" alt="" height="250px" width="250px">
+                </div>
+                <h2 class="product-title">Sunset Orange Vibe Tee</h2>
+                <div class="price-and-cart">
+                    <span class="price">$289</span>
+                    <i class="ri-shopping-bag-fill add-cart"></i>
+                </div>
+            </div>
+
+
+
+            <div class="product-box">
+                <div class="image-box">
+                    <img src="grey.png" alt="" height="250px" width="250px">
+                </div>
+                <h2 class="product-title">Steel Grey Urban Tee</h2>
+                <div class="price-and-cart">
+                    <span class="price">$399</span>
+                    <i class="ri-shopping-bag-fill add-cart"></i>
+                </div>
+            </div>
+
+
+
+            <div class="product-box">
+                <div class="image-box">
+                    <img src="rcb.jpg" alt="" height="250px" width="250px">
+                </div>
+                <h2 class="product-title">RCB Fan Edition Jersey</h2>
+                <div class="price-and-cart">
+                    <span class="price">$1999</span>
+                    <i class="ri-shopping-bag-fill add-cart"></i>
+                </div>
+            </div>
+
+
+            <div class="product-box">
+                <div class="image-box">
+                    <img src="lightgreen.jpg" alt="" height="250px" width="250px">
+                </div>
+                <h2 class="product-title">Mint Green Summer Tee</h2>
+                <div class="price-and-cart">
+                    <span class="price">$289</span>
+                    <i class="ri-shopping-bag-fill add-cart"></i>
+                </div>
+            </div>
+
+
+
+            <div class="product-box">
+                <div class="image-box">
+                    <img src="green.jpg" alt="" height="250px" width="250px">
+                </div>
+                <h2 class="product-title">Forest Green Casual Fit</h2>
+                <div class="price-and-cart">
+                    <span class="price">$219</span>
+                    <i class="ri-shopping-bag-fill add-cart"></i>
+                </div>
+            </div>
+
+
+
+            <div class="product-box">
+                <div class="image-box">
+                    <img src="sky.jpg" alt="" height="250px" width="250px">
+                </div>
+                <h2 class="product-title">Sky Breeze Light Tee</h2>
+                <div class="price-and-cart">
+                    <span class="price">$930</span>
+                    <i class="ri-shopping-bag-fill add-cart"></i>
+                </div>
+            </div>
+
+
+
+            <div class="product-box">
+                <div class="image-box">
+                    <img src="lav.webp" alt="" height="250px" width="250px">
+                </div>
+                <h2 class="product-title">Lavender Soft Touch Tee</h2>
+                <div class="price-and-cart">
+                    <span class="price">$429</span>
+                    <i class="ri-shopping-bag-fill add-cart"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
