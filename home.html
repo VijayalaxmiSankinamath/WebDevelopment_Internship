@@ -473,13 +473,20 @@
                             <button id="increment">+</button>
                         </div>
                     </div>
-                    <i class="ri-delete-bin-line"></i>
+                    <i class="ri-delete-bin-line cart-delete"></i>
         
              `;
              cartItem.append(cartBox);
 
         })
     })
+
+    document.addEventListener("click", function(e) {
+    if (e.target.classList.contains("cart-delete")) {
+        let cartBox = e.target.closest(".cart-box");
+        cartBox.remove();
+    }
+});
 
 
 </script>
