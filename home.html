@@ -243,7 +243,7 @@
     <div class="cart-items">
         <div class="cart-title">
             <div class="cart-content">
-                <div class="cart-box">
+                <!-- <div class="cart-box">
                     <img src="white.jpg" alt="">
                     <div class="cart-details">
                         <h2 class="cart-product-title">Royal White T-Shirt</h2>
@@ -255,9 +255,9 @@
                         </div>
                     </div>
                     <i class="ri-delete-bin-line"></i>
-                    <!-- <i class="ri-close-line"></i> -->
+        
 
-                </div>
+                </div> -->
             </div>
 
             <div class="total">
@@ -441,6 +441,47 @@
     cartClose.addEventListener("click", () => {
         cartItem.classList.remove("cls")
     })
+
+
+    let addCartButtons = document.querySelectorAll(".add-cart");
+
+    addCartButtons.forEach((button)=>{
+        button.addEventListener("click",(event)=>{
+            let productBox = event.target.closest(".product-box");
+            let productImgSrc = productBox.querySelector(".image-box img").src;
+            let productTitle = productBox.querySelector(".product-title").textContent
+            let productPrice = productBox.querySelector(".price").textContent
+
+            let cartProductTitle = cartItem.querySelectorAll(".cart-product-title");
+            for(let item of cartProductTitle){
+                if(item.textContent === productTitle){
+                    alert("Product already in cart");
+                    return;
+                }
+            }
+
+            let cartBox = document.createElement("div");
+            cartBox.classList.add("cart-box");
+            cartBox.innerHTML = `
+            <img src="${productImgSrc}" alt="">
+                    <div class="cart-details">
+                        <h2 class="cart-product-title">${productTitle}</h2>
+                        <span class="cart-price">${productPrice}</span>
+                        <div class="cart-quantity">
+                            <button id="decrement">-</button>
+                            <span id="number">1</span>
+                            <button id="increment">+</button>
+                        </div>
+                    </div>
+                    <i class="ri-delete-bin-line"></i>
+        
+             `;
+             cartItem.append(cartBox);
+
+        })
+    })
+
+
 </script>
 
 </html>
