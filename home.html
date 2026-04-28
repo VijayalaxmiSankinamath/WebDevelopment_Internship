@@ -482,6 +482,7 @@
 
             // ✅ FIX: append to correct container
             document.querySelector(".cart-content").append(cartBox);
+            updateTotalPrice();
 
             // ✅ DELETE
             cartBox.querySelector(".cart-delete").addEventListener("click", () => {
@@ -514,24 +515,22 @@
 
         let updateTotalPrice = () => {
 
-            let cartBoxes = document.querySelector(".cart-content").append(cartBox);
-            updateTotalPrice();
+    let cartBoxes = document.querySelectorAll(".cart-box");
 
-            let total = 0;
+    let total = 0;
 
-            cartBoxes.forEach((cartBox) => {
-                let priceElement = cartBox.querySelector(".cart-price");
-                let quantityElement = cartBox.querySelector("#number");
+    cartBoxes.forEach((cartBox) => {
+        let priceElement = cartBox.querySelector(".cart-price");
+        let quantityElement = cartBox.querySelector("#number");
 
-                let price = parseInt(priceElement.textContent.replace("$", ""));
-                let quant = parseInt(quantityElement.textContent);
+        let price = parseInt(priceElement.textContent.replace("$", ""));
+        let quant = parseInt(quantityElement.textContent);
 
-                total += price * quant;
-            });
+        total += price * quant;
+    });
 
-            document.querySelector(".total-price").textContent = `$${total}`;
-        }
-
+    document.querySelector(".total-price").textContent = `$${total}`;
+}
     });
 </script>
 
