@@ -1,0 +1,220 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            /* border: 2px solid; */
+            position: fixed;
+            top: 0;
+            left: 0px;
+            width: 100%;
+            background-color: lightcoral;
+            height: 10vh;
+            padding: 0px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            font: 1em sans-serif;
+
+
+        }
+
+        .logo {
+            text-decoration: none;
+            font-weight: 10px;
+
+        }
+
+        #cart-icon {
+            position: relative;
+            cursor: pointer;
+        }
+
+
+        .add-f1 {
+            font-size: 25px;
+            color: black;
+        }
+
+        .add-to-cart {
+            position: absolute;
+            top: -8px;
+            right: -10px;
+            width: 18px;
+            height: 18px;
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: red;
+            color: white;
+        }
+
+        .shop {
+            padding: 80px 6% 30px;
+        }
+
+        .section-title {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .product-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+        }
+
+        .product-box .image-box {
+            display: flex;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        .image-box {
+            width: 100%;
+            height: 350px;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            transition: 0.5s ease;
+        }
+
+        .product-box:hover .image-box img {
+            transform: scale(1.1);
+        }
+
+
+        .product-box {
+            padding: 10px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product-title {
+            font-size: 20px;
+            margin-top: 12px;
+        }
+
+        .price-and-cart {
+            margin-top: 14px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        .add-cart {
+            font-size: 25px;
+            color: black;
+            cursor: pointer;
+        }
+
+        .cart-items {
+            position: fixed;
+            right: -380px;
+            top: 0;
+            z-index: 100;
+            background-color: rgb(246, 250, 250);
+            width: 350px;
+            height: 200%;
+            padding: 60px 18px 0px;
+        }
+
+        .cart-items.cls {
+            background-color: rgb(98, 98, 220);
+            right: 0px;
+        }
+
+        .cart-title {
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .cart-box {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .cart-box>img {
+            height: 80px;
+            width: 80px;
+            border-radius: 8px;
+        }
+
+        .cart-details {
+            display: grid;
+            gap: 12px;
+        }
+
+        .cart-product-title {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        .inc {
+            padding: 4px 10px;
+        }
+
+        #number {
+            cursor: default;
+        }
+
+        .total {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 30px;
+            padding-top: 20px;
+            margin-top: 20px;
+            border-top: 2px solid orange;
+        }
+
+        .close-cart {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 28px;
+        }
+
+        .total-title,
+        .total-price {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .btn-buy {
+            background-color: rgb(242, 173, 45);
+            padding: 8px 10px;
+            border: none;
+            border-radius: 8px;
+            right: 0%;
+
+
+
+        }
+
+        .cart-buy-btn {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 10px;
+            padding-right: 20px;
+        }
