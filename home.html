@@ -237,7 +237,7 @@
         <a href="" class="logo">Ecommerce</a>
         <div id="cart-icon">
             <i class="fa-solid fa-bag-shopping add-f1"></i>
-            <span class="cart-item-count add-to-cart">5</span>
+            <span class="cart-item-count add-to-cart"></span>
         </div>
     </nav>
 
@@ -436,6 +436,8 @@
     let cartIcon = document.querySelector("#cart-icon")
     let cartItem = document.querySelector(".cart-items");
     let cartClose = document.querySelector(".close-cart");
+    
+    let count=0
 
     cartIcon.addEventListener("click", () => {
         cartItem.classList.add("cls")
@@ -455,6 +457,7 @@
             let productPrice = productBox.querySelector(".price").textContent;
 
             let cartProductTitle = cartItem.querySelectorAll(".cart-product-title");
+           
 
             for (let item of cartProductTitle) {
                 if (item.textContent === productTitle) {
@@ -482,6 +485,15 @@
 
             // ✅ FIX: append to correct container
             document.querySelector(".cart-content").append(cartBox);
+            let cartitemCount = document.querySelector(".add-to-cart");
+            
+            count++;
+            cartitemCount.textContent=count;
+           //console.log(cartitemCount.textContent);
+           
+            
+            
+         
             updateTotalPrice();
 
             // ✅ DELETE
@@ -531,6 +543,9 @@
 
     document.querySelector(".total-price").textContent = `$${total}`;
 }
+
+
+
     });
 </script>
 
