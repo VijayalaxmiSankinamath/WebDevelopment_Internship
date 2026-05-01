@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.color-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+    background-image: linear-gradient(pink,black);
+}
+.color-img:hover {
+    border: 2px solid black;
+}
