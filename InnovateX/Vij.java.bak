@@ -1,0 +1,25 @@
+class Vij{
+  public static void main(String[] args){
+	  System.out.println("main Starts");
+	 /* try{
+		  int x= 1/0;
+		  System.out.println(x);
+	  }
+	  catch(ArithmeticException a){
+		  System.out.println("handled");
+	  }
+	  System.out.println("main end");
+  }
+}
+*/
+
+int[] arr = {10,20,30,40,50};
+try{
+	System.out.println(arr[5]);
+}
+catch(ArrayOutofBoundException a){
+	System.out.println("handling");
+}
+  }
+}
+	

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUMA.COM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            margin: 0;
+            /* padding-top:70px; */
+           
+        }
+        h3{
+            margin-top: 10px;
+            text-align: center;
+        }
+        header{
+            position: sticky;
+            top: 0;
+             z-index: 1000;
+        }
+        nav{
+            height: 70px;
+            width: 100%;
+            color: white;
+            background-color: black;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 0 20px;
+            gap: 30px;
+        }
+        .logo{
+            height: 60px;
+            width: 50px;
+             margin-right: 20px;
+        }
+        a{
+            color: white;
+            text-decoration: none; 
+        }
+        button{
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+            padding: 10px;
+        }
+        #hi{
+            margin-top: 30px;
+            font-size: 25px;
+            text-align: center;
+        }
+        .circle-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .circle{
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            background-color: lightpink;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid orange;
+            margin: 10px;
+            font-size: 20px;    
+            text-decoration-thickness:bold;
+        }
+   .banner{
+    position:relative;
+    width:100%;
+    height:500px;
+    overflow:hidden;
+    display: flex;
+}
+
+.banner #im1{
+    width:50%;
+    height:100%;
+    
+}
+
+.banner #im2{
+    width:50%;
+    height:100%;
+    
+    position: relative;
+    right: 0;
+}
+
+.banner-text{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    color:white;
+}
+
+.banner-text h1{
+    font-size:40px;
+    letter-spacing:2px;
+}
+
+.banner-text p{
+    margin:10px 0 20px;
+    font-size:18px;
+}
+
+.banner-text button{
+    padding:12px 25px;
+    background:white;
+    color:black;
+    border:none;
+    font-weight:bold;
+    cursor:pointer;
+}
+#z1{
+    text-align: center;
+    margin-top: 30px;
+}
+.add-image{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top: 30px;
+
+}
+.card{
+    position:relative;
+    width:350px;
+    height:450px;
+    overflow:hidden;
+    flex: 0 0 30%;
+}
+.card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.card h2{
+    position:absolute;
+    bottom:20px;
+    left:20%;
+    /* transform:translateX(-50%); */
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+    text-align: center;
+
+}
+.photo{
+    margin-top: 30px;
+
+}
+#p1{
+    position:relative;
+    width:100%;
+    height: 450px;
+    overflow:hidden;
+}
+#p1 img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block; 
+}
+#p1 h2{
+    position:absolute;
+    top: 200px;
+    right:10%;
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+    text-align: center;
+}
+#p1 p{
+    position:absolute;
+    bottom:200px;
+    right:10%;
+    color:white;
+    font-size:18px;
+    font-weight:normal;
+    text-align: center;
+}
+#b1{
+    position:absolute;
+    bottom:150px;
+    right:10%;
+    padding:12px 25px;
+    background:white;
+    color:black;
+    border:none;
+    font-weight:bold;
+    cursor:pointer;
+    margin-top: 10px;
+}
+#b2{
+    position:absolute;
+    bottom:150px;
+    right:22%;
+    padding:12px 25px;
+    background:white;
+    color:black;
+    border:none;
+    font-weight:bold;
+    cursor:pointer;
+    margin-top: 10px;
+}
+.photo2{
+    margin-top: 30px;
+}
+#p2{
+    position:relative;
+    width:100%;
+    height: 450px;
+    overflow:hidden;
+}
+#p2 img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+#p2 h2{
+    position:absolute;
+    top: 200px;
+    left:10%;
+    color:rgb(10, 8, 8);
+    font-size:24px;
+    font-weight:bold;
+    text-align: center;
+}
+#p2 p{
+    position:absolute;
+    bottom:200px;
+    left:10%;
+    color:rgb(22, 15, 15);
+    font-size:18px;
+    font-weight:normal;
+    text-align: center;
+}
+#b3{
+    position:absolute;
+    bottom:150px;
+    left:10%;
+    padding:12px 25px;
+    background:white;
+    color:black;
+    border:none;
+    font-weight:bold;
+    cursor:pointer;
+    margin-top: 10px;
+}
+.photo3{
+    margin-top: 30px;
+}
+#p3{
+    position:relative;
+    width:100%;
+    height: 450px;
+    overflow:hidden;
+}
+#p3 img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+#p3 h2{
+    position:absolute;
+    top: 200px;
+    right:10%;
+    color:rgb(248, 245, 245);
+    font-size:24px;
+    font-weight:bold;
+    text-align: center;
+}
+#p3 p{
+    position:absolute;
+    bottom:200px;
+    right:10%;
+    color:rgb(246, 243, 243);
+    font-size:18px;
+    font-weight:normal;
+    text-align: center;
+}
+#b4{
+    position:absolute;
+    bottom:150px;
+    right:10%;
+    padding:12px 25px;
+    background:white;
+    color:black;
+    border:none;
+    font-weight:bold;
+    cursor:pointer;
+    margin-top: 10px;
+}
+#l1{
+    text-align: center;
+    margin-top: 30px;
+}
+#k1{
+    text-align: center;
+}
+.add-last-image{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top: 30px;
+
+}
+.busy{
+    position:relative;
+    width:350px;
+    height:450px;
+    overflow:hidden;
+    flex: 0 0 30%;
+}
+.busy img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.busy h2{
+    position:absolute;
+    bottom:20px;
+    left:20%;
+    /* transform:translateX(-50%); */
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+    text-align: center;
+
+}
+.photo4{
+    margin-top: 30px;
+}
+#p4{
+    position:relative;
+    width:100%;
+    height: 450px;
+    overflow:hidden;
+}
+#p4 img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+#p4 h2{
+    position:absolute;
+    top: 200px;
+    left: 50%;
+    transform:translateX(-50%);
+    color:rgb(245, 240, 240);
+    font-size:24px;
+    font-weight:bold;
+    text-align: center;
+}
+#p4 p{
+    position:absolute;
+    bottom:200px;
+    left:50%;
+    transform:translateX(-50%);
+    color:rgb(251, 247, 247);
+    font-size:18px;
+    font-weight:normal;
+    text-align: center;
+}
+#b5{
+    position:absolute;
+    bottom:150px;
+    left: 46%;
+    padding:12px 25px;
+    background:white;
+    color:#0a0707;
+    border:none;
+    font-weight:bold;
+    cursor:pointer;
+    margin-top: 10px;
+}
+
+
+    </style>
+</head>
+<body>
+    <h3>EASY RETURN AND EXCHANGES</h3>
+    <header>
+        <nav>
+            <img src="puma0.jpg" class="logo">
+            <a href="">New</a>
+            <a href="">Sports</a>
+            <a href="">Men</a>
+            <a href="">Women</a>
+            <a href="">Motorsport</a>
+            <a href="">Lifestyle</a>
+            <a href="">Kids</a>
+            <button><i class="fa-solid fa-magnifying-glass" style="color: rgba(242, 244, 247, 1.00);"></i>SEARCH</button>
+            
+            <i class="fa-regular fa-heart" style="color: rgba(242, 244, 247, 1.00);"></i>
+            <i class="fa-solid fa-cart-arrow-down" style="color: rgba(242, 244, 247, 1.00);"></i>
+            <i class="fa-regular fa-user" style="color: rgba(242, 244, 247, 1.00);"></i>
+        </nav>
+    </header>
+
+    <h3 id="hi">MAKE THEM RIGHTFULLY YOURS</h3>
+    <div class="circle-container">
+        <div class="circle">MEN</div>
+        <div class="circle">WOMEN</div>
+        <div class="circle">JERSEYS</div>
+        <div class="circle">INSIDER 
+            <br>PICKS</div>
+        <div class="circle">SNEAKERS</div>
+        <div class="circle">SPORTS 
+            <br>SHOES</div>
+        <div class="circle">KIDS</div>
+    </div>
+
+    <section class="banner">
+    
+    <img id="im1" src="pumashoes.jpg" alt="Puma Shoe">
+    <img id="im2" src="running.jpg" alt="Puma1 Shoe">
+
+    <div class="banner-text">
+        <h1>TIME OF YOUR LIFE</h1>
+        <p>FAST-R NITRO ELITE 3</p>
+        <button>SHOP NOW</button>
+    </div>
+
+</section>
+
+
+<h2 id="z1"><b>FROM TRACK TO STREET</b></h2>
+<h3>INSPIRED BY THE PERFORMANCE GEAR WORN BY DRIVERS & TEAMS</h3>
+
+<div class="add-image">
+    <div class="card">
+        <img src="boy1.jpg" alt="McLaren">
+        <h2>MCLAREN RACING</h2>
+    </div>
+    <div class="card">
+        <img src="boy2.avif" alt="Ferrari">
+        <h2>SCUDERIA FERRARI</h2>
+    </div>
+     <div class="card">
+        <img src="boy3.jpg" alt="Aston Martin">
+        <h2>ASTON MARTIN ARAMCO F1®</h2>
+    </div>
+
+</div>
+<div class="photo">
+    <div id="p1">
+        <img src="couple.jpg" alt="couple">
+        <h2 >GIFTS THAT IMPRESS</h2>
+        <p>TREAT YOURSELF TO NEW STYLES FOR VALENTINE'S DAY</p>
+        <button id="b1">SHOP SPEEDCAT</button>
+        <button id="b2">SHOP BALLET</button>
+    </div>
+
+</div>
+
+<div class="photo2">
+    <div id="p2">
+        <img src="car4.webp" alt="puma1">
+        <h2 >FUAL YOUR GAME</h2>
+        <p>PUMA x FAST & FURIOUS</p>
+        <button id="b3">SHOP NOW</button>
+</div>
+
+<div class="photo3">
+    <div id="p3">
+        <img src="anushka.webp" alt="puma2">
+        <h2 >THE BLUES ARE BACK HOME</h2>
+        <p>PUMA x BANGALURU FC HOME & AWAY KIT</p>
+        <button id="b4">SHOP NOW</button>
+</div>
+
+<h1 id="l1">UNLEASH YOUR ENERGY</h1>
+<h2 id="k1">EXPERIENCE THE NITRO™️DIFFERENCE</h2>
+<div class="add-last-image">
+    <div class="busy">
+        <img src="run1.webp" alt="running1">
+        <h2>DEVIATE 4</h2>
+    </div>
+    <div class="busy">
+        <img src="run5.webp" alt="running2">
+        <h2>VELOCITY 4</h2>
+    </div>
+     <div class="busy">
+        <img src="run4.webp" alt="running3">
+        <h2>MAGMAX 2</h2>
+    </div>
+
+</div>
+
+
+<div class="photo4">
+    <div id="p4">
+        <img src="couple2.jpg" alt="puma1">
+        <h2 >PUMA x HYROX</h2>
+        <p>MADE FOR THIS</p>
+        <button id="b5">SHOP NOW</button>
+</div>
+
+
+    
+</body>
+</html>

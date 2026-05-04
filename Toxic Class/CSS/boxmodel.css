@@ -1,0 +1,26 @@
+div{
+    border-width: 10px;
+    border-color: brown;
+    border-style: inset;
+    width: 200px;
+
+
+    padding:50px;
+
+
+    /* border-top-left-radius: 50px; */
+    /* border-bottom-right-radius: 50px; */
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+
+
+    margin: 400px 0px 0px 800px;
+
+}
+
+button{
+    padding:10px 50px;
+    border: 5px solid blueviolet;
+    border-radius: 10px;
+    margin-left: 100px;
+}

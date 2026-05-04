@@ -1,0 +1,25 @@
+class Sample21{
+int r=10;
+void co(){
+System.out.println("Hello");
+         }
+    }
+  class Hahoha extends Sample21{
+  void disp(){
+  System.out.println("Byeeeeeeeeeee");
+  }
+  
+  }
+      
+    
+    class casting12{
+       public static void main(String[] args){
+         Sample21 s31 = new Hahoha();
+	 s31.co();
+	 System.out.println(s31.r);
+	Hahoha h2 = (Hahoha)s31;
+	h2.disp();
+
+	 
+	 }
+	 }

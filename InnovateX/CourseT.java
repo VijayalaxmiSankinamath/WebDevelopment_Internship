@@ -1,0 +1,17 @@
+class CourseT{
+  String c_name;
+  String u_name;
+  float cost;
+     CourseT(String c_name,String u_name,float cost){
+		this.c_name=c_name;
+		this.u_name=u_name;
+		this.cost=cost;
+	}
+	public String toString(){
+		return this.c_name + " " + this.u_name+" " + this.cost;
+	}
+	public static void main(String[] args){
+		 CourseT c1= new  CourseT("java","jspiders",19340f);
+		System.out.println(c1.toString());
+	}
+}

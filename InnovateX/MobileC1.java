@@ -1,0 +1,16 @@
+class MobileC1{
+    double cost;
+    String model;
+    String color;
+    MobileC1(double cost, String model,String color){
+      this.cost=cost;
+      this.model=model;
+      this.color=color;
+      }
+      public static void main(String[] args){
+        MobileC1 m1=new MobileC1(18590.70,"Samsung","blue");
+	System.out.println(m1.cost);
+	System.out.println(m1.model);
+	System.out.println(m1.color);
+	}
+}

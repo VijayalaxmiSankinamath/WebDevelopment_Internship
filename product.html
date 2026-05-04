@@ -1,23 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
     <title>Product Details</title>
     <link rel="stylesheet" href="product.css">
 </head>
+
 <body>
 
-<h1 id="title"></h1>
-<img id="main-img" src="" width="300">
+    <div class="container">
 
-<h2 id="price"></h2>
+        <!-- LEFT: IMAGE -->
+        <div class="left">
+            <img id="main-img" src="" class="main-img">
+            
+            <div class="color-options">
+                <img class="color-img" src="white.jpg" data-name="White Shirt" data-price="499">
+                <img class="color-img" src="black.jpg" data-name="Black Shirt" data-price="599">
+                <img class="color-img" src="blue.jpg" data-name="Blue Shirt" data-price="549">
+                <img class="color-img" src="pink.jpg" data-name="Pink Shirt" data-price="699">
+            </div>
+        </div>
 
-<!-- color options -->
-<div>
-    <img src="white.jpg"  class="color-img">
-    <img src="black1.webp"  class="color-img">
-    <img src="blue.jpg"  class="color-img">
-</div>
+        <!-- RIGHT: DETAILS -->
+        <div class="right">
+            <h1 id="title"></h1>
+            <h2 id="price"></h2>
 
-<script src="product.js"></script>
+            <p class="desc">
+                Premium quality cotton shirt. Comfortable, stylish and perfect for daily wear.
+            </p>
+
+            <button class="btn">Add to Cart</button>
+        </div>
+
+    </div>
+
+    <script src="product.js"></script>
 </body>
+
 </html>

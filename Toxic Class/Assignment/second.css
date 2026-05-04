@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Main wrapper */
+.diagram{
+    width: 1000px;
+    margin: 80px auto;
+    position: relative;
+}
+
+/* MARGIN AREA */
+.margin{
+    background: #bcd4df;
+    padding: 100px;
+    border: 2px dotted black;
+}
+
+/* BORDER */
+.border{
+    border: 12px solid black;
+}
+
+/* PADDING */
+.padding{
+    background: #e5c13b;
+    padding: 80px;
+}
+
+/* CONTENT */
+.content{
+    background: #f2f2f2;
+    padding: 25px;
+    width: 500px;
+    line-height: 1.5;
+}
+
+/* Labels */
+.label{
+    position: absolute;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+/* EXACT placement like your screenshot */
+
+.margin-label{
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.border-label{
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.padding-label{
+    right: -120px;
+    top: 230px;
+}
+
+.content-label{
+    bottom: -60px;
+    right: 80px;
+}

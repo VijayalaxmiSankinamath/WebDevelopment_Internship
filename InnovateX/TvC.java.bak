@@ -1,0 +1,16 @@
+class TvC{
+    double cost;
+    String brand;
+    String type;
+    CarC(double a, String b,String c){
+      cost=a;
+      brand=b;
+      type=c;
+      }
+      public static void main(String[] args){
+        TvC t1=new TvC(90000.00,"Sony","LED");
+	System.out.println(t1.cost);
+	System.out.println(t1.brand);
+	System.out.println(t1.type);
+	}
+}

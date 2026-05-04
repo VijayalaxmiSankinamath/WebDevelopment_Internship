@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            text-align: center;
+            text-shadow: 5px 5px 5px grey;
+            font-size: 40px;
+        }
+        body{
+            background-color: lightpink;
+        }
+        main{
+            height: 1200px;
+            width: 80%;
+            background-color:white;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+            border: 5px solid black;
+            display: grid;
+            grid-template-columns: 32% 32% 32%;
+            grid-template-rows: 380px 380px 380px;
+            justify-content: space-evenly;
+            gap: 16px 8px;
+
+        }
+        main>div{
+            /* background-color: chartreuse; */
+            /* border: 3px solid black; */
+        }
+        main>div:nth-child(1)>div:nth-child(1){
+            height: 190px;
+            width: 380px;
+            /* background-color: azure; */
+            background-image: url(r1.jpg);
+            background-repeat: no-repeat;
+            background-size: 380px 190px;
+            border: 2px solid black;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end:2;
+        }
+        main>div:nth-child(1)>div:nth-child(2){
+            height: 190px;
+            width: 380px;
+            /* background-color: azure; */
+            background-image: url(r2.avif);
+            background-repeat: no-repeat;
+            background-size: 380px 190px;
+            border: 2px solid black;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end:2;
+        }
+        main>div:nth-child(2)>div:nth-child(1){
+            height: 190px;
+            width: 380px;
+            /* background-color: azure; */
+            background-image: url(sudi1.jpg);
+            background-repeat: no-repeat;
+            background-size: 380px 190px;
+            border: 2px solid black;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end:3;
+        }
+        main>div:nth-child(2)>div:nth-child(2){
+            height: 190px;
+            width: 380px;
+            /* background-color: azure; */
+            background-image: url(sudi2.jpg);
+            background-repeat: no-repeat;
+            background-size: 380px 190px;
+            border: 2px solid black;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end:3;
+        }
+        main>div:nth-child(3)>div:nth-child(1){
+            height: 190px;
+            width: 380px;
+            /* background-color: azure; */
+            background-image: url(s1.jpg);
+            background-repeat: no-repeat;
+            background-size: 380px 190px;
+            border: 2px solid black;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 3;
+            grid-column-end:4;
+        }
+        main>div:nth-child(3)>div:nth-child(2){
+            height: 190px;
+            width: 380px;
+            /* background-color: azure; */
+            background-image: url(sh3.jpg);
+            background-repeat: no-repeat;
+            background-size: 380px 190px;
+            border: 2px solid black;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 3;
+            grid-column-end:4;
+        }
+        
+         main>div:nth-child(4)>div:nth-child(1){
+            height: 190px;
+            width: 380px;
+            /* background-color: azure; */
+            background-image: url(puni1.webp);
+            background-repeat: no-repeat;
+            background-size: 380px 190px;
+            border: 2px solid black;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end:2;
+        }
+         main>div:nth-child(4)>div:nth-child(2){
+            height: 190px;
+            width: 380px;
+            /* background-color: azure; */
+            background-image: url(puni2.jpg);
+            background-repeat: no-repeat;
+            background-size: 380px 190px;
+            border: 2px solid black;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end:2;
+        }
+        main>div:nth-child(5)>div:nth-child(1){
+            height: 190px;
+            width: 380px;
+            /* background-color: azure; */
+            background-image: url(ad1.jpg);
+            background-repeat: no-repeat;
+            background-size: 380px 190px;
+            border: 2px solid black;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end:3;
+        }
+        main>div:nth-child(5)>div:nth-child(2){
+            height: 190px;
+            width: 380px;
+            /* background-color: azure; */
+            background-image: url(ad2.jpg);
+            background-repeat: no-repeat;
+            background-size: 380px 190px;
+            border: 2px solid black;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end:3;
+        }
+        main>div:nth-child(6)>div:nth-child(1){
+            height: 190px;
+            width: 380px;
+            /* background-color: azure; */
+            background-image: url(dd1.jpg);
+            background-repeat: no-repeat;
+            background-size: 380px 190px;
+            border: 2px solid black;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end:4;
+        }
+        main>div:nth-child(6)>div:nth-child(2){
+            height: 190px;
+            width: 380px;
+            /* background-color: azure; */
+            background-image: url(dd2.jpg);
+            background-repeat: no-repeat;
+            background-size: 380px 190px;
+            border: 2px solid black;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end:4;
+        }
+        main>div:nth-child(7)>div:nth-child(1){
+            height: 190px;
+            width: 380px;
+            /* background-color: azure; */
+            background-image: url(ra1.jpg);
+            background-repeat: no-repeat;
+            background-size: 380px 190px;
+            border: 2px solid black;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end:2;
+        }
+        main>div:nth-child(7)>div:nth-child(2){
+            height: 190px;
+            width: 380px;
+            /* background-color: azure; */
+            background-image: url(ra2.webp);
+            background-repeat: no-repeat;
+            background-size: 380px 190px;
+            border: 2px solid black;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end:2;
+        }
+        main>div:nth-child(8)>div:nth-child(1){
+            height: 190px;
+            width: 380px;
+            /* background-color: azure; */
+            background-image: url(vasu1.jpeg);
+            background-repeat: no-repeat;
+            background-size: 380px 190px;
+            border: 2px solid black;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end:3;
+        }
+        main>div:nth-child(8)>div:nth-child(2){
+            height: 190px;
+            width: 380px;
+            /* background-color: azure; */
+            background-image: url(vasu2.jpg);
+            background-repeat: no-repeat;
+            background-size: 380px 190px;
+            border: 2px solid black;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end:3;
+        }
+        main>div:nth-child(9)>div:nth-child(1){
+            height: 190px;
+            width: 380px;
+            /* background-color: azure; */
+            background-image: url(radh1.jpg);
+            background-repeat: no-repeat;
+            background-size: 380px 190px;
+            border: 2px solid black;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end:4;
+        }
+        main>div:nth-child(9)>div:nth-child(2){
+            height: 190px;
+            width: 380px;
+            /* background-color: azure; */
+            background-image: url(radh2.webp);
+            background-repeat: no-repeat;
+            background-size: 380px 190px;
+            border: 2px solid black;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end:4;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h3>
+        Grid in CSS
+    </h3>
+    <hr>
+    
+    <!-- main>div{grid-items$}*8 -->
+    <main>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+    </main>
+    
+</body>
+</html>

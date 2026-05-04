@@ -1,0 +1,16 @@
+class BikeC{
+    double cost;
+    String brand;
+    String color;
+    BikeC(double a, String b,String c){
+      cost=a;
+      brand=b;
+      color=c;
+      }
+      public static void main(String[] args){
+        BikeC b1=new BikeC(90000.00,"BMW","blue");
+	System.out.println(b1.cost);
+	System.out.println(b1.brand);
+	System.out.println(b1.color);
+	}
+}

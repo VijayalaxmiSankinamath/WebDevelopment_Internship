@@ -1,0 +1,24 @@
+ nav{
+    height: 70px;
+    width: 100%;
+    background-color:black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+a{
+    color: azure;
+    text-decoration: none;
+}
+main{
+    height: 700px;
+    width: 100%;
+    background-color: aquamarine;
+    background-image: url("https://tse4.mm.bing.net/th/id/OIP.Ng96xCj6h_WPwVLzGTiSFwHaE5?pid=Api&P=0&h=180");
+    background-repeat: no-repeat;
+    background-size: 100% 700px;
+}
+
+*{
+    margin: 0%;
+}

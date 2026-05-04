@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            text-align: center;
+            text-decoration: 4px solid black underline;
+            text-decoration-color: black;
+            text-decoration-thickness: 4px;
+        }
+        main{
+            height: 600px;
+            width: 100%;
+            background-color: rgb(190, 161, 31);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            height: 300px;
+            width: 300px;
+            background-color: rgb(106, 0, 255);
+            transition : all 2s linear 0s;
+            cursor: pointer;
+        }
+        div:hover{
+            background-color: brown;
+            transform: rotate(360deg);
+            transform: translateX(-500px);
+            transform: translateY(-500px);
+            transform: translate(-900px, -500px);
+            /* transform: skewX(-150deg); */
+            /* transform:skewY(-150deg); */
+            transform:skew(-150deg, -150deg);
+            /* transform:scaleX(-3); */
+            /* transform:scaleY(-3); */
+            transform:scale(1.1, 1.1);
+            transform: translate(-900px, -500px);
+        }
+    </style>
+</head>
+<body>
+    <h2>TRAMSFORM IN CSS</h2>
+    <hr>
+    <main>
+        <div>
+
+        </div>
+    </main>
+    
+</body>
+</html>

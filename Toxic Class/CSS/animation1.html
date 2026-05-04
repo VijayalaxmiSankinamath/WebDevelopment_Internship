@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+
+        }
+        body{
+            background-color: coral;
+        }
+        div{
+            height: 400px;
+            width: 400px;
+            background-color: black;
+            position: relative;
+            animation-name: box;
+            animation-duration: 5s;
+            animation-delay: 0s;
+            animation-timing-function: linear;
+            animation-iteration-count: 5;
+            animation-direction: reverse;
+            
+        }
+        @keyframes box {
+            /* from{
+                background-color: black;
+            }to{
+                background-color: cornflowerblue;
+            } */
+             0%{
+                background-color: black;
+                top: 0;
+                left: 0;
+
+             }
+             25%{
+                background-color: aquamarine;
+                left: 500px;
+                top: 0;
+             }
+             50%{
+                background-color: chartreuse;
+                top: 300px;
+                left: 500px;
+             }
+             75%{
+                background-color: hotpink;
+                top: 200px;
+                left: 0;
+
+             }
+             100%{
+                background-color: deeppink;
+                top: 0;
+                left: 0;
+             }
+            
+        }
+        #circle{
+            height: 400px;
+            width: 400px;
+            background-color: deeppink;
+            border-radius: 50%;
+            border: 15px solid dodgerblue;
+            border-top: 15px solid red;
+            animation-name: change;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: 6;
+            animation-direction: alternate-reverse;
+            
+        }
+        @keyframes change{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+      #ping{
+        height: 200px;
+        width: 300px;
+        background-color: deeppink;
+            border-radius: 50%;
+            border: 15px solid dodgerblue;
+            border-top: 15px solid red;
+            animation-name: dora;
+            position: relative;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: 6;
+            animation-direction: alternate-reverse;
+            background-color: brown;
+
+      }
+      @keyframes dora {
+        0%{
+            top: 0;
+        }50%{
+            top: 500px;
+        }
+        100%{
+            top: 0;
+        }
+
+        
+      }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <h1>Animation In Css</h1>
+    <hr>
+    <!-- <div></div> -->
+    <!-- <section id="circle">
+
+    </section>
+    <h2>Hello</h2>
+     -->
+
+
+     <div id="ping">
+
+     </div>
+</body>
+</html>

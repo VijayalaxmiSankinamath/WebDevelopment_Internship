@@ -1,0 +1,9 @@
+class Three1{
+  void rect(int a,int b){
+     int area=a*b;
+     System.out.println(area);
+     }
+     public static void main(String[] args){
+     new Three1().rect(5,7);
+     }
+     }

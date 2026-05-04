@@ -1,0 +1,41 @@
+class Train
+{
+	void travel(){
+		System.out.println("travelling at train");
+	}
+}
+class FirstClass extends Train
+{
+	void travel(){
+		System.out.println("travelling at firstclass train");
+	}
+	
+}
+class Sleeper extends Train
+{
+    void travel(){
+		System.out.println("travelling at sleeper train");
+	}	
+}
+class SecondClass extends Train
+{
+	void travel(){
+		System.out.println("travelling at secondclass train");
+	}
+}
+class Stimulator
+{
+	static void using(Train t1){
+		t1.travel();
+	}
+}
+class MainClass5
+{
+	public static void main(String[] args){
+		FirstClass f1 = new FirstClass();
+		Sleeper s1 = new Sleeper();
+		SecondClass s2 = new SecondClass();
+		Stimulator.using(f1);
+		Stimulator.using(s1);
+		Stimulator.using(s2);
+}

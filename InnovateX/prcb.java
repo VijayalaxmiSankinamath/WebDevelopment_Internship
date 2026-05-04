@@ -1,0 +1,10 @@
+class prcb
+{
+	public static void main(String[] args){
+		long n=8,cub=1;
+		for(int i=1;i<=n;i++){
+			cub=(i*i*i)*cub;
+		}
+		System.out.println(cub);
+	}
+}

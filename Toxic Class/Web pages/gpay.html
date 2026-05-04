@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GPay UI</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#f1f3f6;
+    display:flex;
+    justify-content:center;
+}
+
+/* Mobile container */
+.mobile{
+    width:100%;
+    max-width:420px;
+    background:#fff;
+    min-height:100vh;
+    position:relative;
+}
+
+/* Top Search */
+.top{
+    padding:15px;
+    background:#e9edf3;
+}
+
+.search-bar{
+    background:white;
+    border-radius:30px;
+    padding:10px 15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.search-bar input{
+    border:none;
+    outline:none;
+    width:80%;
+}
+
+.profile{
+    background:#1a73e8;
+    color:white;
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+}
+
+/* Banner */
+.banner{
+    padding:20px;
+    background:linear-gradient(to right,#e3ecff,#ffffff);
+}
+
+.banner h2{
+    font-weight:500;
+    margin-bottom:10px;
+}
+
+.banner button{
+    background:#1a73e8;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:20px;
+}
+
+/* Actions */
+.actions{
+    display:flex;
+    justify-content:space-around;
+    padding:20px 10px;
+}
+
+.action{
+    text-align:center;
+}
+
+.icon-box{
+    background:#dbe6ff;
+    width:70px;
+    height:70px;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:26px;
+    margin-bottom:8px;
+}
+
+/* Small cards */
+.cards{
+    display:flex;
+    gap:10px;
+    padding:10px;
+    overflow-x:auto;
+}
+
+.card{
+    background:#f5f7fa;
+    padding:12px;
+    border-radius:20px;
+    min-width:140px;
+    font-size:14px;
+}
+
+/* Section title */
+.section{
+    padding:15px;
+    font-size:20px;
+}
+
+/* People grid */
+.people{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+    padding:10px 15px;
+    text-align:center;
+}
+
+.avatar{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-weight:bold;
+    margin:auto;
+}
+
+.purple{ background:#8e44ad;}
+.blue{ background:#3b5998;}
+.green{ background:#16a085;}
+.brown{ background:#6d4c41;}
+.pink{ background:#c2185b;}
+
+/* Bottom nav */
+.bottom-nav{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    max-width:420px;
+    background:white;
+    display:flex;
+    justify-content:space-around;
+    padding:12px 0;
+    border-top:1px solid #ddd;
+}
+
+.bottom-nav div{
+    text-align:center;
+    font-size:14px;
+}
+
+.active{
+    color:#1a73e8;
+    font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="mobile">
+
+    <!-- Top -->
+    <div class="top">
+        <div class="search-bar">
+            <input type="text" placeholder="Pay by name or phone number">
+            <div class="profile">V</div>
+        </div>
+    </div>
+
+    <!-- Banner -->
+    <div class="banner">
+        <h2>Get your free CIBIL score instantly!</h2>
+        <button>Check now →</button>
+    </div>
+
+    <!-- Actions -->
+    <div class="actions">
+        <div class="action">
+            <div class="icon-box">📷</div>
+            Scan QR
+        </div>
+        <div class="action">
+            <div class="icon-box">₹</div>
+            Pay anyone
+        </div>
+        <div class="action">
+            <div class="icon-box">🏦</div>
+            Bank transfer
+        </div>
+        <div class="action">
+            <div class="icon-box">📱</div>
+            Recharge
+        </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="cards">
+        <div class="card">🚀 UPI Lite<br><b>Activate</b></div>
+        <div class="card">🏆 Rewards<br><b>New</b></div>
+        <div class="card">🆔 UPI ID<br><b>vijay@upi</b></div>
+    </div>
+
+    <!-- People -->
+    <div class="section">People</div>
+
+    <div class="people">
+        <div>
+            <div class="avatar purple">S</div>
+            Shambhavi
+        </div>
+        <div>
+            <div class="avatar blue">A</div>
+            Arun
+        </div>
+        <div>
+            <div class="avatar pink">S</div>
+            Shreya
+        </div>
+        <div>
+            <div class="avatar green">P</div>
+            Praveen
+        </div>
+    </div>
+
+</div>
+
+<!-- Bottom Navigation -->
+<div class="bottom-nav">
+    <div class="active">🏠<br>Home</div>
+    <div>₹<br>Money</div>
+    <div>👤<br>You</div>
+</div>
+
+</body>
+</html>

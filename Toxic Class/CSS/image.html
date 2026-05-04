@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: lightskyblue;
+        }
+
+        span {
+            height: 400px;
+            width: 50%;
+            animation-name: cloud;
+            animation-duration: 2s;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            position: relative;
+            animation-timing-function: linear;
+        }
+
+        @keyframes cloud {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 90px;
+            }
+        }
+
+        b{
+            height: 100px;
+            width: 100px;
+            animation-name: birds1;
+            animation-duration: 3s;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            position: relative;
+            animation-timing-function: linear;
+
+        }
+        @keyframes birds1 {
+            from{
+                left: 400px;
+            }to{
+                left: 800px;
+            }
+            
+        }
+        em{height: 200px;
+            width: 200px;
+            animation-name: birds2;
+            animation-duration: 3s;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            position: relative;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+
+
+        }
+        @keyframes birds2 {
+            from{
+                left: 900px;
+            }to{
+                /* left: 450px; */
+                left: 0;
+            }
+            
+        }
+        .water{
+    height:20vh;
+    /* background:#1e90ff; */
+    background-image: url(wave.png);
+    position:relative;
+    overflow:hidden;
+}
+.boat{
+    position:absolute;
+    bottom:20px;
+    animation:boatMove 30s linear infinite,
+               boatFloat 3s ease-in-out infinite alternate;
+}
+
+.boat img{ width:200px;}
+
+@keyframes boatMove{
+    from{ left:-200px;}
+    to{ left:100%;}
+}
+
+@keyframes boatFloat{
+    from{ transform:translateY(0);}
+    to{ transform:translateY(-15px);}
+}
+        
+        .road{
+    height:25vh;
+    /* background:#333; */
+    background-image: url(road.jpg);
+    position:relative;
+    overflow:hidden;
+}
+.line{
+    position:absolute;
+    width:200%;
+    height:6px;
+    background:white;
+    top:50%;
+    animation:lineMove 3s linear infinite;
+}
+
+@keyframes lineMove{
+    from{ transform:translateX(0);}
+    to{ transform:translateX(-200px);}
+}
+.car{
+    position:absolute;
+    bottom:20px;
+    animation:carMove1 8s linear infinite;
+}
+
+.car img{ width:250px;}
+@keyframes carMove1 {
+            from{
+            left: 85%;
+        }to{
+            left: 0;
+        }
+    }
+    .car1{
+    position:absolute;
+    bottom:60px;
+    animation:carMove2 14s linear infinite;
+}
+
+.car1 img{ width:200px;}
+
+@keyframes carMove2{
+     from{
+                left: 0;
+            }
+            to{
+                left: 85%;
+            }
+}
+.scooter{
+    position:absolute;
+    bottom:40px;
+    animation:scooterMove 12s linear infinite;
+}
+
+.scooter img{ width:160px;}
+
+@keyframes scooterMove{
+    from{ left:-250px;}
+    to{ left:100%;}
+}
+
+        
+
+
+    </style>
+</head>
+
+<body>
+    <span>
+        <img src="c1.png" alt="" height="200px" width="200px">
+    </span>
+    <span>
+        <img src="c1.png" alt="" height="200px" width="200px">
+    </span>
+    <span>
+        <img src="c1.png" alt="" height="200px" width="200px">
+    </span>
+    <span>
+        <img src="c1.png" alt="" height="200px" width="200px">
+    </span>
+    <span>
+        <img src="c1.png" alt="" height="200px" width="200px">
+    </span>
+    <span>
+        <img src="c1.png" alt="" height="200px" width="200px">
+    </span>
+    <span>
+        <img src="c1.png" alt="" height="200px" width="200px">
+    </span>
+    <b><img src="birdb1-removebg-preview.png" alt="" height="100px" width="100px"></b>
+    <em>
+        <img src="twobirdremove.png" alt="" height="200px" width="200px">
+    </em>
+    
+<div class="water">
+    <!-- <div class="wave"></div> -->
+    <div class="boat"><img src="boat1.png"></div>
+</div>
+    <div class="road">
+    <div class="line"></div>
+    <div class="car"><img src="c0.png"></div>
+    <div class="car1"><img src="cr10.png"></div>
+    <div class="scooter"><img src="sc1.png"></div>
+
+    
+</div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+class Method_Instagram {
+
+    // Post a photo
+    void post(String photo) {
+        System.out.println("Photo posted: " + photo);
+    }
+
+    // Post a photo with caption
+    void post(String photo, String caption) {
+        System.out.println("Photo posted: " + photo);
+        System.out.println("Caption: " + caption);
+    }
+
+    // Post a photo with caption and location
+    void post(String photo, String caption, String location) {
+        System.out.println("Photo posted: " + photo);
+        System.out.println("Caption: " + caption);
+        System.out.println("Location: " + location);
+    }
+
+    // Send message to one user
+    void sendMessage(String user) {
+        System.out.println("Message sent to " + user);
+    }
+
+
+    public static void main(String[] args) {
+        Instagram app = new Instagram();
+
+        app.post("beach.jpg");
+        app.post("mountains.jpg", "Vacation vibes ??");
+        app.post("food.jpg", "Yummy!", "Bangalore");
+
+        app.sendMessage("Rahul");
+
+ 
+    }
+}

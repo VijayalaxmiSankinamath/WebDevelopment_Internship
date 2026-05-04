@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            text-transform: capitalize;
+            text-shadow: 5px 5px 5px grey;
+            text-decoration: underline blue;
+
+        }
+        #parent{
+            height: 600px;
+            width: 800px;
+            background-color: aqua;
+            border: 5px solid black;
+            box-shadow: 5px 5px 5px black;
+            position: relative;
+
+        }
+        #child1{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            border: 2px solid white;
+            position: absolute;
+            right: 0;
+            z-index: 24;
+        }
+
+        #child2{
+            height: 100px;
+            width: 100px;
+            background-color: hotpink;
+            border: 2px solid yellow;
+            position: absolute;
+            right: 0;
+            z-index: 100;
+        }
+        #child3{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(236, 31, 65);
+            border: 2px solid rgb(55, 149, 64);
+            position: absolute;
+            right: 0;
+            z-index: 89;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 >z-index</h1>
+    <hr>
+
+    <!-- div#parent>div#chiled${child$}*4 -->
+    <div id="gp">
+        <div id="parent">
+            <div id="child1">child1</div>
+            <div id="child2">child2</div>
+            <div id="child3">child3</div>
+        </div>
+    </div>
+</body>
+
+</html>

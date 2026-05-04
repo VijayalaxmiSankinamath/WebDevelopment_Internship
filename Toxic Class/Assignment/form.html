@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in HTML</title>
+</head>
+
+<body>
+    <center>
+        <h1><u>STUDENT REGISTRATION FORM</u></h1>
+</center>
+
+    <form action="" method="get" style="width: 500px;" autocomplete="on">
+        <fieldset>
+            <table bgcolor="SlateBlue" style="color:white;" cellpadding="10">
+                <tr>
+                    <td>
+                        <label for="fn">FIRST NAME</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="First Name" id="fn" required name="Firstname"
+                            pattern="[A-Za-z]{,30}" title="Maximum 30 characters only">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ln">LAST NAME</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Last name" id="ln" required name="Lastname"
+                            pattern="[A-Za-z]{,30}" title="Maximum 30 characters only">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">DATE OF BIRTH</label>
+                    </td>
+                    <td>
+                        <input type="date" id="" name="dob" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="em">EMAIL</label>
+                    </td>
+                    <td>
+                        <input type="email" placeholder="Email" id="em" required name="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">MOBILE NUMBER</label>
+                    </td>
+                    <td>
+                        <input type="tel" placeholder="Mobile Number" id="" required name="" pattern="[6-9][0-9]{9,}"
+                            title="Enter valid phone number">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="">GENDER</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="GENDER" value="male">Male
+                        <input type="radio" name="GENDER" value="female">Female
+                        <input type="radio" name="GENDER" value="other">Others
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="address">ADDRESS</label></td>
+                    <td> <textarea name="address" id="address" placeholder="Enter Address"></textarea></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ci">CITY</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="City" id="ci" required name="City" pattern="[A-Za-z]{,30}"
+                            title="Maximum 30 characters only">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">PINCODE</label>
+                    </td>
+                    <td>
+                        <input type="number" placeholder="Pincode" id="" required name="" pattern="[0-9]{5,}"
+                            title="Enter valid pincode">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="st">STATE</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="State" id="st" required name="State" pattern="[A-Za-z]{,30}"
+                            title="Maximum 30 characters only">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ct">COUNTRY</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Country" id="ct" required name="Country" pattern="[A-Za-z]{,30}"
+                            title="Maximum 30 characters only">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="hb">HOBBIES</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="hb" required name="HOBBIES" value="Drawing">Drawing
+                        <input type="checkbox" id="hb" required name="HOBBIES3" value="Cooking">Cooking
+                        <input type="checkbox" id="hb" required name="HOBBIES4" value="Travelling">Travelling
+                        <input type="checkbox" id="hb" required name="HOBBIES5" value="Gaming">Gaming
+                        <br>
+                        <input type="checkbox" id="hb" required name="HOBBIES6" value="Others">Others <input type="text"
+                            name="other_hobby">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">QUALIFICATION</label>
+                    </td>
+                    <td>
+
+                    <table bgcolor="SlateBlue" style="color:white;">
+
+                            <tr>
+                                <th align="center">S.No</th>
+                                <th align="center">Examination</th>
+                                <th align="center">Board / University</th>
+                                <th align="center">Percentage</th>
+                                <th align="center">Year</th>
+                            </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Class X</td>
+                            <td><input type="text" name="board1"></td>
+                            <td><input type="text" name="percentage1"></td>
+                            <td><input type="text" name="year1"></td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Class XII</td>
+                            <td><input type="text" name="board2"></td>
+                            <td><input type="text" name="percentage2"></td>
+                            <td><input type="text" name="year2"></td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Graduation</td>
+                            <td><input type="text" name="board3"></td>
+                            <td><input type="text" name="percentage3"></td>
+                            <td><input type="text" name="year3"></td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>Masters</td>
+                            <td><input type="text" name="board4"></td>
+                            <td><input type="text" name="percentage4"></td>
+                            <td><input type="text" name="year4"></td>
+                        </tr>
+                    </table>
+                    </td>
+                <tr>
+                    <td>
+                        <label for="">COURSES APPLIED FOR</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="" name="Course" value="BCA">BCA
+                        <input type="radio" id="" name="Course" value="BSC">B.SC
+                        <input type="radio" id="" name="Course" value="B.Com">B.Com
+                        <input type="radio" id="" name="Course" value="BA">B.A
+                    </td>
+                </tr>
+                <BR>
+                <br>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+
+
+
+            </table>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

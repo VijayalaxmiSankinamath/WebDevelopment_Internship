@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+/* body{
+    margin:0; 
+    padding:0;
+} */
+
+.slider{
+    width:800px;
+    height:350px;
+    overflow:hidden;
+    margin:auto;
+}
+
+.slide-track{
+    display:flex;
+    width:400%;
+    animation: slide 12s infinite;
+}
+
+.slide-track img{
+    width:900px;
+    height:350px;
+}
+
+@keyframes slide{
+
+    0%{
+        margin-left:0;
+    }
+
+    25%{
+        margin-left:-800px;
+    }
+
+    50%{
+        margin-left:-1600px;
+    }
+
+    75%{
+        margin-left:-2400px;
+    }
+
+    100%{
+        margin-left:0;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="slider">
+        <div class="slide-track">
+    <img src="puma2.jpg" >
+    <img src="tab.jpg" >
+    <img src="bike.jpg" >
+    <img src="D.png" >
+    <img src="pumashoes.jpg" >
+    </div>
+</div>
+
+</body>
+
+</html>
+

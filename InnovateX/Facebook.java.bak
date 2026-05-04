@@ -1,0 +1,30 @@
+class Facebook {
+
+    void post(String text) {
+        System.out.println("Status posted: " + text);
+    }
+
+        void post(String text, String image) {
+        System.out.println("Status: " + text);
+        System.out.println("Image: " + image);
+    }
+
+ 
+    void post(String text, String image, String location) {
+        System.out.println("Status: " + text);
+        System.out.println("Image: " + image);
+        System.out.println("Location: " + location);
+    }
+
+   
+
+    public static void main(String[] args) {
+        Facebook fb = new Facebook();
+
+        fb.post("Hello Facebook!");
+        fb.post("Vacation time", "beach.jpg");
+        fb.post("Food vibes", "pizza.jpg", "Bangalore");
+
+       
+    }
+}

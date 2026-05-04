@@ -1,0 +1,13 @@
+class HomeWork1{
+         double cost;
+        String color;
+	static String mob_name ="samsung";
+	public static void main(String[] args){
+	 System.out.println(mob_name);
+	 HomeWork1 mm=new HomeWork1();
+	 mm.cost=67990.99;
+	 mm.color="blue";
+	 System.out.println( mm.cost);
+	 System.out.println(mm.color);
+	 }
+	 }

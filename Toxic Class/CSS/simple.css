@@ -1,0 +1,27 @@
+section{
+    color:aqua;
+    background-color:hotpink
+}
+
+#first{
+    color:rgb(189, 148, 173);
+    background-color:purple;
+}
+
+.dot{
+    color:lime;
+    background-color:orangered;
+}
+
+figure{
+    color:teal;
+    background-color:orange;
+}
+
+aside,h4{
+    color:maroon;
+    background-color:yellow;
+}
+
+*{
+    background-color: bisque;}

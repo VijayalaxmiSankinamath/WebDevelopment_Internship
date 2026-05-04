@@ -1,0 +1,25 @@
+abstract class Juice_shop
+{
+	abstract void apple();
+	abstract void mango();
+}
+abstract class Jar extends Juice_shop
+{
+	void mango(){
+		System.out.println("Mango Juice");
+	}
+}
+class Jar1 extends Jar
+{
+	void apple(){
+		System.out.println("Apple Juice");
+	}
+}
+class MainClass1
+{
+	public static void main(String[] args){
+		Jar1 j1 = new Jar1();
+		j1.apple();
+		j1.mango();
+	}
+}

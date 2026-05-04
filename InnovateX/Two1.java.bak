@@ -1,0 +1,9 @@
+class Two1{
+  void sq(int a){
+     int area=a*a;
+     System.out.println(area);
+     }
+     public static void main(String[] args){
+     new Two1().sq(5);
+     }
+     }

@@ -1,0 +1,21 @@
+class AgeNotValid extends Exception {
+    
+}
+class Voting {
+    static void checkAge(int age) throws AgeNotValid {
+        if (age >= 18) {
+            System.out.println("Eligible to Vote");
+        } else {
+            throw new AgeNotValid();
+        }
+    }
+}
+public class CT1 {
+    public static void main(String[] args) {
+        try {
+            Voting.checkAge(16);
+        } catch (AgeNotValid e) {
+            System.out.println("Not valid");
+        }
+    }
+}

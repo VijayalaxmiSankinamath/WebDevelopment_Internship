@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            text-align: center;
+            text-shadow: 5px 5px 5px grey;
+            font-size: 40px;
+        }
+        body{
+            background-color: rgb(206, 33, 59);
+        }
+        main{
+            height: 750px;
+            width: 80%;
+            gap:5px 10px;
+            background-color:black;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+            border: 5px solid black;
+            display: grid;
+            grid-template-areas: "hdr hdr hdr"
+                                 "scn scn1 scn2"
+                                 "art art art"
+                                 "asd asd asd1"
+                                 "ftr ftr ftr";
+
+        }
+        main>div{
+            background-color: lightseagreen;
+            border:1px solid black
+        }
+        main>div:nth-child(1){
+            grid-area: hdr;
+        }
+        main>div:nth-child(2){
+            grid-area: scn;
+        }
+        main>div:nth-child(3){
+            grid-area: scn1;
+        }
+        main>div:nth-child(4){
+            grid-area: scn2;
+        }
+        main>div:nth-child(5){
+            grid-area: art;
+        }
+        main>div:nth-child(6){
+            grid-area: asd;
+        }
+        main>div:nth-child(7){
+            grid-area: asd1;
+        }
+        main>div:nth-child(8){
+            grid-area: ftr;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <h3>
+        Grid in CSS
+    </h3>
+    <hr>
+    
+    <!-- main>div{grid-items$}*8 -->
+    <main>
+        <div>grid-items1</div>
+        <div>grid-items2</div>
+        <div>grid-items3</div>
+        <div>grid-items4</div>
+        <div>grid-items5</div>
+        <div>grid-items6</div>
+        <div>grid-items7</div>
+        <div>grid-items8</div>
+    </main>
+    
+</body>
+</html>

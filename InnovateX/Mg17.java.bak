@@ -1,0 +1,12 @@
+class Gm17{
+   void tri(int a,int b){
+   double area=0.5*a*b;
+    System.out.println(area);
+    }
+    }
+    class Mg17{
+      public static void main(String[] args){
+        Gm17 g1= new Gm17();
+	    g1.tri(7,6);
+	}
+}

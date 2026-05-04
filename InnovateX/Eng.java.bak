@@ -1,0 +1,6 @@
+interface akku{
+  void see();
+  }
+  class Eng {
+     public static void main(String[] args){
+        

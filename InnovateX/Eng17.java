@@ -1,0 +1,16 @@
+interface akku17{
+  double see();
+  }
+  class Eng17 {
+     public static void main(String[] args){
+		 akku17 a17 = () ->{
+			 int a=20;
+			 int b=30;
+			 double area = 0.5 * a * b;
+			 return area;
+		 };
+		 double x = a17.see();
+		 System.out.println(x);
+	 }
+  }
+        

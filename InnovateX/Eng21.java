@@ -1,0 +1,18 @@
+interface akku21{
+  double see();
+  }
+  class Eng21 {
+     public static void main(String[] args){
+		 akku21 a21 = () ->{
+			 int a=20;
+			 int b=10;
+			 double pi = 3.142;
+			 double area = pi * a *b;
+			 return area;
+			 
+		 };
+		double x = a21.see();
+		 System.out.println(x);
+	 }
+  }
+        

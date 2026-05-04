@@ -1,0 +1,64 @@
+class TryToday{
+    public static void main(String[] args){
+		byte a = 25;
+		float b = (float)a;
+		System.out.println(b);
+		
+		byte c=40;
+		double d=(double)c;
+		System.out.println(d);
+		
+		short e=89;
+		float f=(float)e;
+		System.out.println(f);
+		
+		short g= 90;
+		double h=(double)g;
+		System.out.println(h);
+		
+		int i=789;
+		float j= (float)i;
+		System.out.println(j);
+		
+		int k=890;
+		double l=(double)k;
+		System.out.println(l);
+		
+		long m=900L;
+		float n=(float)m;
+		System.out.println(n);
+		
+		long o=956;
+		double p=(double)o;
+		System.out.println(p);
+		
+		/*char ch='a';
+		String s1=(String)ch;
+		System.out.println(s1);
+		*/
+		
+		float q=998.98f;
+		int w=(int)q;
+		System.out.println(w);
+		
+		double s= 3459999.99;
+		long z=(long)s;
+		System.out.println(z);
+		
+		
+		
+		int no=65;
+		char ch=(char)no;
+		System.out.println(ch);
+		
+		
+		char c1='A';
+		int no1=(int)c1;
+		System.out.println(no1);
+		
+		
+		
+	}
+}
+		
+		

@@ -1,0 +1,11 @@
+class ppt
+{
+	static String con(String a,String b){
+		String cd=a+b;
+		return cd;
+	}
+	public static void main(String[] args){
+		System.out.println(con("Viju","Appa"))
+	};
+		
+}

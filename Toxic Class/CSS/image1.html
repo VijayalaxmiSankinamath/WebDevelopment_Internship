@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nature Animation</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    overflow:hidden;
+    font-family:sans-serif;
+}
+
+/* ================= SKY ================= */
+
+.sky{
+    height:55vh;
+    background:linear-gradient(to top,#4facfe,#c2e9fb);
+    position:relative;
+    overflow:hidden;
+}
+
+/* SUN */
+.sun{
+    position:absolute;
+    top:60px;
+    right:120px;
+    width:100px;
+    height:100px;
+    background:radial-gradient(circle,yellow,orange);
+    border-radius:50%;
+    box-shadow:0 0 80px yellow;
+    animation:sunGlow 4s infinite alternate;
+}
+
+@keyframes sunGlow{
+    from{ transform:scale(1);}
+    to{ transform:scale(1.1);}
+}
+
+/* MOUNTAINS */
+.mountains{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:150px;
+    background:linear-gradient(to top,#2e8b57,#3cb371);
+    clip-path:polygon(0 100%,10% 60%,20% 100%,30% 50%,40% 100%,50% 60%,60% 100%,70% 50%,80% 100%,90% 60%,100% 100%);
+}
+
+/* CLOUDS */
+.cloud{
+    position:absolute;
+    animation:cloudMove linear infinite;
+}
+
+.cloud img{ width:200px; }
+
+.cloud1{ top:60px; animation-duration:40s;}
+.cloud2{ top:120px; animation-duration:30s;}
+.cloud3{ top:90px; animation-duration:50s;}
+
+@keyframes cloudMove{
+    from{ left:-300px;}
+    to{ left:100%;}
+}
+
+/* BIRDS */
+.bird{
+    position:absolute;
+    animation:birdMove linear infinite;
+}
+
+.bird img{ width:100px;}
+
+.b1{ top:160px; animation-duration:18s;}
+.b2{ top:210px; animation-duration:22s;}
+.b3{ top:140px; animation-duration:16s;}
+
+@keyframes birdMove{
+    from{ left:-200px;}
+    to{ left:100%;}
+}
+
+/* ================= WATER ================= */
+
+.water{
+    height:20vh;
+    background:#1e90ff;
+    position:relative;
+    overflow:hidden;
+}
+
+/* WAVES */
+.wave{
+    position:absolute;
+    width:200%;
+    height:100%;
+    background:repeating-linear-gradient(
+        -45deg,
+        rgba(255,255,255,0.2) 0px,
+        rgba(255,255,255,0.2) 15px,
+        transparent 15px,
+        transparent 30px
+    );
+    animation:waveMove 6s linear infinite;
+}
+
+@keyframes waveMove{
+    from{ transform:translateX(0);}
+    to{ transform:translateX(-200px);}
+}
+
+/* BOAT */
+.boat{
+    position:absolute;
+    bottom:20px;
+    animation:boatMove 30s linear infinite,
+               boatFloat 3s ease-in-out infinite alternate;
+}
+
+.boat img{ width:150px;}
+
+@keyframes boatMove{
+    from{ left:-200px;}
+    to{ left:100%;}
+}
+
+@keyframes boatFloat{
+    from{ transform:translateY(0);}
+    to{ transform:translateY(-15px);}
+}
+
+/* ================= ROAD ================= */
+
+.road{
+    height:25vh;
+    background:#333;
+    position:relative;
+    overflow:hidden;
+}
+
+/* ROAD DIVIDER */
+.line{
+    position:absolute;
+    width:200%;
+    height:6px;
+    background:white;
+    top:50%;
+    animation:lineMove 3s linear infinite;
+}
+
+@keyframes lineMove{
+    from{ transform:translateX(0);}
+    to{ transform:translateX(-200px);}
+}
+
+/* CAR 1 (Fast Lane) */
+.car{
+    position:absolute;
+    bottom:20px;
+    animation:carMove1 8s linear infinite;
+}
+
+.car img{ width:250px;}
+
+@keyframes carMove1{
+    from{ right:-250px;}
+    to{ right:100%;}
+}
+
+/* CAR 2 (Slow Lane) */
+.car1{
+    position:absolute;
+    bottom:60px;
+    animation:carMove2 14s linear infinite;
+}
+
+.car1 img{ width:200px;}
+
+@keyframes carMove2{
+    from{ left:-250px;}
+    to{ left:100%;}
+}
+
+/* SCOOTER (Opposite Direction) */
+.scooter{
+    position:absolute;
+    bottom:40px;
+    animation:scooterMove 12s linear infinite;
+}
+
+.scooter img{ width:160px;}
+
+@keyframes scooterMove{
+    from{ left:-250px;}
+    to{ left:100%;}
+}
+/* ================= TREE ================= */
+
+.tree{
+    position:absolute;
+    bottom:25vh;
+    left:10%;
+    width:40px;
+    height:100px;
+    background:brown;
+}
+
+.tree::before{
+    content:"";
+    position:absolute;
+    bottom:60px;
+    left:-30px;
+    width:100px;
+    height:100px;
+    background:green;
+    border-radius:50%;
+    animation:treeSway 3s ease-in-out infinite alternate;
+}
+
+@keyframes treeSway{
+    from{ transform:rotate(-3deg);}
+    to{ transform:rotate(3deg);}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="sky">
+    <div class="sun"></div>
+    <div class="mountains"></div>
+
+    <div class="cloud cloud1"><img src="c1.png"></div>
+    <div class="cloud cloud2"><img src="c1.png"></div>
+    <div class="cloud cloud3"><img src="c1.png"></div>
+
+    <div class="bird b1"><img src="twobirdremove.png"></div>
+    <div class="bird b2"><img src="twobirdremove.png"></div>
+    <div class="bird b3"><img src="twobirdremove.png"></div>
+</div>
+
+<div class="water">
+    <div class="wave"></div>
+    <div class="boat"><img src="boat1.png"></div>
+</div>
+
+<div class="road">
+    <div class="line"></div>
+    <div class="car"><img src="c0.png"></div>
+    <div class="car1"><img src="cr10.png"></div>
+    <div class="scooter"><img src="sc1.png"></div>
+
+    
+</div>
+
+<div class="tree"></div>
+
+</body>
+</html>

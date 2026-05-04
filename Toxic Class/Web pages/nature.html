@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nature Animation</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    overflow:hidden;
+}
+
+/* SKY */
+.sky{
+    height:60vh;
+    width:100%;
+    background:linear-gradient(to top, #87CEEB, #E0F6FF);
+    position:relative;
+}
+
+/* CLOUD */
+.cloud{
+    position:absolute;
+    top:50px;
+    left:-200px;
+    width:200px;
+    height:60px;
+    background:white;
+    border-radius:50px;
+    animation:cloudMove 25s linear infinite;
+}
+
+.cloud::before{
+    content:"";
+    position:absolute;
+    top:-30px;
+    left:30px;
+    width:100px;
+    height:100px;
+    background:white;
+    border-radius:50%;
+}
+
+@keyframes cloudMove{
+    from{ left:-200px; }
+    to{ left:100%; }
+}
+
+/* BIRDS */
+.bird{
+    position:absolute;
+    top:120px;
+    left:-100px;
+    font-size:30px;
+    animation:birdFly 15s linear infinite;
+}
+
+@keyframes birdFly{
+    from{ left:-100px; }
+    to{ left:100%; }
+}
+
+/* SEA */
+.sea{
+    height:20vh;
+    width:100%;
+    background:#1E90FF;
+    position:relative;
+}
+
+/* BOAT */
+.boat{
+    position:absolute;
+    bottom:10px;
+    left:10%;
+    font-size:40px;
+    animation:boatFloat 4s ease-in-out infinite alternate;
+}
+
+@keyframes boatFloat{
+    from{ transform:translateY(0px); }
+    to{ transform:translateY(-10px); }
+}
+
+/* ROAD */
+.road{
+    height:20vh;
+    width:100%;
+    background:#333;
+    position:relative;
+}
+
+/* CAR */
+.car{
+    position:absolute;
+    bottom:10px;
+    left:-150px;
+    font-size:40px;
+    animation:carMove 10s linear infinite;
+}
+
+@keyframes carMove{
+    from{ left:-150px; }
+    to{ left:100%; }
+}
+
+/* SCOOTER */
+.scooter{
+    position:absolute;
+    bottom:10px;
+    left:-200px;
+    font-size:35px;
+    animation:scooterMove 12s linear infinite;
+}
+
+@keyframes scooterMove{
+    from{ left:-200px; }
+    to{ left:100%; }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="sky">
+    <div class="cloud"></div>
+    <div class="bird">🐦 🐦</div>
+</div>
+
+<div class="sea">
+    <div class="boat">🚤</div>
+</div>
+
+<div class="road">
+    <div class="car">🚗</div>
+    <div class="scooter">🛵</div>
+</div>
+
+</body>
+</html>

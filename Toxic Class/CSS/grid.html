@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            text-align: center;
+            text-shadow: 5px 5px 5px grey;
+            font-size: 40px;
+        }
+        body{
+            background-color: lightpink;
+        }
+        main{
+            height: 750px;
+            width: 80%;
+            background-color:black;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+            border: 5px solid black;
+            display: grid;
+            grid-template-columns: 32% 32% 32%;
+            grid-template-rows: 70px 200px 150px 150px 100px;
+            justify-content: space-evenly;
+            gap: 10px 5px;
+
+        }
+        main>div{
+            background-color: chartreuse;
+            border: 2px solid black;
+        }
+        main>div:first-child{
+            /* height: 100px;
+            width: 100px; */
+            background-color: azure;
+            border: 2px solid blue;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end:4;
+        }
+        main>div:nth-child(2){
+            /* height: 100px;
+            width: 100px; */
+            background-color: azure;
+            border: 2px solid blue;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end:2;
+
+
+        }
+        main>div:nth-child(3){
+            /* height: 100px;
+            width: 100px; */
+            background-color: azure;
+            border: 2px solid blue;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end:3;
+
+        }
+        main>div:nth-child(4){
+            /* height: 100px;
+            width: 100px; */
+            background-color: azure;
+            border: 2px solid blue;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end:4;
+
+        }
+        main>div:nth-child(5){
+            /* height: 100px;
+            width: 100px; */
+            background-color: azure;
+            border: 2px solid blue;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end:4;
+
+
+        }
+        main>div:nth-child(6){
+            /* height: 100px;
+            width: 100px; */
+            background-color: azure;
+            border: 2px solid blue;
+            grid-row-start: 4;
+            grid-row-end: 5;
+            grid-column-start: 1;
+            grid-column-end:3;
+
+        }
+        main>div:nth-child(7){
+            /* height: 100px;
+            width: 100px; */
+            background-color: azure;
+            border: 2px solid blue;
+            grid-row-start: 4;
+            grid-row-end: 5;
+            grid-column-start: 3;
+            grid-column-end:4;
+
+        }
+        main>div:nth-child(8){
+            /* height: 100px;
+            width: 100px; */
+            background-color: azure;
+            border: 2px solid blue;
+            grid-row-start: 5;
+            grid-row-end: 6;
+            grid-column-start: 1;
+            grid-column-end:4;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h3>
+        Grid in CSS
+    </h3>
+    <hr>
+    
+    <!-- main>div{grid-items$}*8 -->
+    <main>
+        <div>grid-items1</div>
+        <div>grid-items2</div>
+        <div>grid-items3</div>
+        <div>grid-items4</div>
+        <div>grid-items5</div>
+        <div>grid-items6</div>
+        <div>grid-items7</div>
+        <div>grid-items8</div>
+    </main>
+    
+</body>
+</html>

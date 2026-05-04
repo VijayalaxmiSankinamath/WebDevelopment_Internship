@@ -1,0 +1,15 @@
+class stsq1
+{
+	static void sq(){
+		int a=4;
+		int area=a*a
+			System.out.println(area);
+	}
+	
+}
+class stsq
+{
+	public static void main(String[] args){
+		stsq1.sq();
+	}
+}

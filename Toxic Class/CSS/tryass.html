@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Main Container */
+.container{
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+    padding:40px;
+}
+
+/* Common Image Box Style */
+.box{
+    height:300px;
+    border:2px solid black;
+    background-size:cover;
+    background-position:center;
+    transition:0.5s ease;
+}
+
+/* Hover effect */
+/*.box:hover{
+    transform:scale(1.05);
+}*/
+
+/* Individual Images */
+#cls1{ background-image:url(https://tse1.mm.bing.net/th/id/OIP.i54DzKW0j3n8uPCIOfCfDAHaFT?pid=Api&P=0&h=180); }
+#cls2{ background-image:url(https://tse3.mm.bing.net/th/id/OIP.ktWnwh3zlTaAT6O8xKPdwwHaFI?pid=Api&P=0&h=180); }
+#cls3{ background-image:url(https://tse4.mm.bing.net/th/id/OIP.2Onugy95UgfPhg8zTINsLwHaFj?pid=Api&P=0&h=180); }
+#cls4{ background-image:url(https://tse2.mm.bing.net/th/id/OIP.RHy9xZzQTDdmpvmITbPwswHaHa?pid=Api&P=0&h=180); }
+#cls5{ background-image:url(https://tse2.mm.bing.net/th/id/OIP.xMWtDifvKibf9PzyYKyrmgHaFj?pid=Api&P=0&h=180); }
+#cls6{ background-image:url(http://www.hdwallpapers.in/download/tiger_swallowtail_butterfly-1440x900.jpg); }
+
+#cls1:hover{
+                background-image: url(https://tse3.mm.bing.net/th/id/OIP.ktWnwh3zlTaAT6O8xKPdwwHaFI?pid=Api&P=0&h=180);
+                transition:all 2s linear 0s;
+            }
+            #cls2:hover{
+                background-image: url(https://tse4.mm.bing.net/th/id/OIP.2Onugy95UgfPhg8zTINsLwHaFj?pid=Api&P=0&h=180);
+                transition:all 2s linear 0s;
+            }
+            #cls3:hover{
+                background-image: url(https://tse2.mm.bing.net/th/id/OIP.RHy9xZzQTDdmpvmITbPwswHaHa?pid=Api&P=0&h=180);
+                transition:all 2s linear 0s;
+            }
+            #cls4:hover{
+                background-image: url(https://tse2.mm.bing.net/th/id/OIP.xMWtDifvKibf9PzyYKyrmgHaFj?pid=Api&P=0&h=180);
+                transition:all 2s linear 0s;
+            }
+            #cls5:hover{
+                background-image: url(http://www.hdwallpapers.in/download/tiger_swallowtail_butterfly-1440x900.jpg);
+                transition:all 2s linear 0s;
+            }
+            #cls6:hover{
+                background-image: url(https://tse1.mm.bing.net/th/id/OIP.i54DzKW0j3n8uPCIOfCfDAHaFT?pid=Api&P=0&h=180);
+                transition:all 2s linear 0s;
+            }
+
+/* Responsive (mobile) */
+/*@media(max-width:768px){
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}*/
+
+@media(max-width:480px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="box" id="cls1"></div>
+    <div class="box" id="cls2"></div>
+    <div class="box" id="cls3"></div>
+    <div class="box" id="cls4"></div>
+    <div class="box" id="cls5"></div>
+    <div class="box" id="cls6"></div>
+</div>
+
+</body>
+</html>

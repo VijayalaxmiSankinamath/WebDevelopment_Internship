@@ -1,16 +1,110 @@
-*{
+/* Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.color-img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin: 10px;
-    cursor: pointer;
-    background-image: linear-gradient(pink,black);
+
+body {
+    font-family: Arial, sans-serif;
+    /* background: #f5f5f5; */
+    background-image: url('https://images.unsplash.com/photo-1632516643720-e7f5d7d6ecc9?q=80&w=711&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1632516643720-e7f5d7d6ecc9?q=80&w=711&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
+
+/* Layout */
+.container {
+    display: flex;
+    gap: 50px;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15%;
+    size: fit-content;
+}
+
+/* LEFT SIDE */
+.left {
+    width: 400px;
+}
+
+.main-img {
+    width: 100%;
+    border-radius: 12px;
+    transition: 0.4s;
+}
+
+/* Hover zoom */
+.main-img:hover {
+    transform: scale(1.05);
+}
+
+/* Color Options */
+.color-options {
+    display: flex;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.color-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
 .color-img:hover {
+    transform: scale(1.1);
+}
+
+/* Active selection */
+.color-img.active {
     border: 2px solid black;
+}
+
+/* RIGHT SIDE */
+.right {
+    width: 400px;
+}
+
+#title {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#price {
+    color: green;
+    margin-bottom: 15px;
+}
+
+.desc {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.btn {
+    background: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
 }

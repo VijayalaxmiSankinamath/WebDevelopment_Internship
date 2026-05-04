@@ -1,0 +1,22 @@
+class MethodOverloading{
+	public static void sent(String text){
+		System.out.println("send only text msg:" +text);
+	}
+	public static void sent(long contacts){
+		System.out.println("send only contacts msg:" +contacts);
+	}
+	public static void sent(String text,long contacts){
+		System.out.println("send  text msg and contacts:" +text +" "+contacts);
+	}
+	public static void sent(long contacts,String text){
+		System.out.println("send contacts and  text msg:" +contacts + " "+ text);
+	}
+	public static void main(String[] args){
+		sent("viju");
+		sent(888999000L);
+		sent("viju",66778999L);
+		sent(77889999L,"Viju");
+	}
+}
+	
+	

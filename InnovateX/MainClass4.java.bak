@@ -1,0 +1,48 @@
+class Mobiles {
+	void features()
+		{
+		System.out.println("Many features");
+	    }
+   }
+class Vivo extends Mobiles
+{
+    void features()
+		{
+		System.out.println("Vivo features");
+	    }
+   }
+class Oppo extends Mobiles
+{
+	 void features()
+		{
+		System.out.println("Oppo features");
+	    }
+   }
+
+class Redmi extends Mobiles
+{
+	void features()
+		{
+		System.out.println("Redmi features");
+	    }
+   }
+
+class Stimulator
+{
+	static void buy(Mobiles m1)
+	{
+		m1.features;
+	}
+}
+class MainClass4
+{
+	public static void main(String[] args)
+		{
+		Vivo v1 = new Vivo();
+		Oppo o1 = new Oppo();
+		Redmi r1 = new Redmi();
+		Stimulator.buy(v1);
+		Stimulator.buy(o1);
+		Stimulator.buy(r1);
+	}
+}

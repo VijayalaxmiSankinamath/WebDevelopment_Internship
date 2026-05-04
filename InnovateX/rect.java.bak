@@ -1,0 +1,12 @@
+class rect
+{
+	static void areaRect(){
+		int w =10;
+		int h=90;
+		int u=w*h;
+		System.out.println(u);
+}
+ public static void main(Strinh[] args){
+	 areaRect();
+ }
+}

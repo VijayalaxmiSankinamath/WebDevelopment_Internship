@@ -1,0 +1,39 @@
+import java.util.Scanner;
+class TodayTask{
+	static int calculateParkingLot(int hr,int min){
+		int fees=0;
+		if(hr<0){
+			return -1;
+		}
+		if(min<0 && min>59){
+			return -2;
+		}
+		if( min<=15){
+			return fees;
+		}else if(hr<=2 && min>15){
+			return fees+5;
+		}
+		else if(hr >2 && hr <=5){
+			return fees+10;
+		}
+		else if(hr>5){
+			return fees+ 10 + (hr-5);
+		}
+	}
+}
+class F1
+{
+
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		int hr = sc.nextInt();
+		int min= sc.nextInt();
+		int s1=calculateParkingLot(hr, min);
+		System.out.println(s1);
+	}
+}
+		
+		
+		
+			
+			

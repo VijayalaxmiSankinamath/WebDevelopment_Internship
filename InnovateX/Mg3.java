@@ -1,0 +1,14 @@
+class Gm3{
+   void parl(){
+    int a=8;
+    int b=9;
+    double area=a*b;
+    System.out.println(area);
+    }
+    }
+    class Mg3{
+      public static void main(String[] args){
+        Gm3 g1= new Gm3();
+	g1.parl();
+	}
+}

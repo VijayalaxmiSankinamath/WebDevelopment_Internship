@@ -1,0 +1,10 @@
+class Eight1{
+  void circle( int r){
+     final double pi=3.14;
+     double area=pi*r*r;
+     System.out.println(area);
+     }
+     public static void main(String[] args){
+     new Eight1().circle(3);
+     }
+}

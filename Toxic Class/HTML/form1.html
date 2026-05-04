@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="get" autocomplete="on">
+        <fieldset>
+            <legend>
+                Signup
+            </legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="fn">First Name</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="First Name" id="fn" required name="Firstname" 
+                        pattern="[A-Za-z]{4,}" title="Minimum 4 characters required">
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ln">Last Name</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Last name" id="ln" required name="Lastname"
+                        pattern="[A-Za-z]{5,}" title="Minimum 5 characters required">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="em">Email</label>
+                    </td>
+                    <td>
+                        <input type="email" placeholder="Email" id="em" required name="">
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="address">Address</label></td>
+                    <td> <textarea name="address" id="address" placeholder="Enter Address"></textarea></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="num">Phone Number</label>
+                    </td>
+                    <td>
+                        <input type="tel" placeholder="Phone Number" id="num" required name="Phone"
+                        pattern="[6-9][0-9]{9,}" title="Enter valid phone number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pw">Password</label>
+                    </td>
+                    <td>
+                        <input type="password" placeholder="Password" id="pw" required name="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="date">date</label>
+                    </td>
+                    <td> <input type="time" id="date" name="date"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="sp">Food</label>
+                    </td>
+                    <td>
+                        <select name="Food" id="sp">
+                            <option value="Pizza">Pizza</option>
+                            <option value="Biryani">Biryani</option>
+                            <option value="Pasta">Pasta</option>
+                            <option value="Burger" selected>Burger</option>
+                        </select>
+                    </td>
+                </tr>
+                <!-- dataList -->
+                <tr>
+                    <td>
+                        <label for="">Language</label>
+                    </td>
+                    <td>
+                        <input type="text" list="profile">
+                        <datalist id="profile">
+                            <option value="English">
+                            <option value="Hindi">
+                            <option value="Kannada">
+                            <option value="Tamil">
+                            <option value="Telugu">
+                            <option value="French">
+                            <option value="German">
+                            <option value="Spanish">
+                            <option value="Chinese">
+                            <option value="Japanese">
+                            <option value="Russian">
+                            </option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gn">Gender</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="gn" name="Gender" value="Male">Male
+                        <input type="radio" id="gn" name="Gender" value="Female">Female
+                        <input type="radio" id="gn" name="Gender" value="Others">Others
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Programming Skills</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="ps" required name="Programming Skills" value="Java">Java
+                        <input type="checkbox" id="ps" required name="Programming Skills1" value="Python">Python
+                        <input type="checkbox" id="ps" required name="Programming Skills2" value="C++">C++
+                        <input type="checkbox" id="ps" required name="Programming Skills3" value="JavaScript">JavaScript
+                        <input type="checkbox" id="ps" required name="Programming Skills4" value="HTML/CSS">HTML/CSS
+                        <input type="checkbox" id="ps" required name="Programming Skills5" value="Ruby">Ruby
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">profile</label>
+                    </td>
+                    <td>
+                        <input type="image" src="p1.jpg"  height="50" width="50">
+                    </td>
+                </tr>
+                    <tr>
+                    <td>
+                        <label for="file">File</label>
+                    </td>
+                    <td>
+                        <input type="file" name="file" id="file">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <button type="Submit">Signup</button>
+                    </td>
+                    <td>
+                        <button type="reset">Reset</button>
+                    </td>
+                </tr>
+
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>

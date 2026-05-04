@@ -1,0 +1,17 @@
+class LaptopT{
+  String name;
+  long cost;
+  String brand;
+    LaptopT(String name,long cost,String brand){
+		this.name=name;
+		this.cost=cost;
+		this.brand=brand;
+	}
+	public String toString(){
+		return this.name + " " + this.cost+" " + this.brand;
+	}
+	public static void main(String[] args){
+		LaptopT l1= new LaptopT("Lenovo",34567L,"LOQ);
+		System.out.println(l1.toString());
+	}
+}

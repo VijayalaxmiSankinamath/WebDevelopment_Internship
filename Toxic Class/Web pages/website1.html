@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⭐Perfumery Landing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: rgb(244, 245, 248);
+            height: 80px;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+
+        .p1 {
+            color: rgb(21, 19, 19);
+            font-size: 30px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        .p2 a {
+            color: rgb(21, 20, 20);
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        nav .fa-cart-shopping {
+            font-size: 25px;
+            color: rgb(21, 20, 20);
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        .image {
+            position: relative;
+        }
+
+        #im1 img {
+            height: 700px;
+            width: 100%;
+        }
+
+        #im1 h3 {
+            position: absolute;
+            top: 30%;
+            left: 15%;
+            transform: translate(-50%, -50%);
+            color: rgb(88, 87, 87);
+            font-size: 20px;
+            font-weight: lighter;
+        }
+
+        #im1 p {
+            position: absolute;
+            top: 38%;
+            left: 17%;
+            transform: translate(-50%, -50%);
+            color: rgb(3, 3, 3);
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        #b1 {
+            position: absolute;
+            top: 51%;
+            left: 13%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: brown;
+            color: white;
+            border: 2px solid brown;
+            cursor: pointer;
+        }
+
+        #im2 {
+            position: absolute;
+            top: 95%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+            height: 100px;
+            width: 300px;
+        }
+
+        #im2 img {
+            height: 400px;
+            width: 500px;
+        }
+
+        #im2 h3 {
+            position: absolute;
+            top: 280%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+            color: rgb(88, 87, 87);
+            font-size: 15px;
+            font-weight: lighter;
+        }
+
+        #im2 h2 {
+            position: absolute;
+            top: 320%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+            color: rgb(3, 3, 3);
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        #im2 h4 {
+            position: absolute;
+            top: 350%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+            color: brown;
+            font-size: 16px;
+            font-weight: lighter;
+        }
+
+        #im3 {
+            position: absolute;
+            top: 95%;
+            right: 20%;
+            transform: translate(-50%, -50%);
+            height: 100px;
+            width: 300px;
+        }
+
+        #im3 img {
+            height: 250px;
+            width: 500px;
+        }
+
+        #im3 h3 {
+            position: absolute;
+            top: 80%;
+            right: 45%;
+            transform: translate(-50%, -50%);
+            color: rgb(88, 87, 87);
+            font-size: 15px;
+            font-weight: lighter;
+        }
+
+        #im3 h2 {
+            position: absolute;
+            top: 120%;
+            right: 37%;
+            transform: translate(-50%, -50%);
+            color: rgb(3, 3, 3);
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        #im3 h4 {
+            position: absolute;
+            top: 180%;
+            right: 70%;
+            transform: translate(-50%, -50%);
+            color: brown;
+            font-size: 16px;
+            font-weight: lighter;
+        }
+
+        #div1 {
+            height: 700px;
+            width: 100%;
+            position: absolute;
+            left: 10%;
+            top: 1200px;
+        }
+
+        #div2 {
+            height: 300px;
+            width: 1000px;
+            position: absolute;
+            right: 30px;
+            top: 1250px;
+            font-size: 20px;
+            color: rgb(3, 3, 3);
+        }
+
+        #div3 {
+            height: 200px;
+            width: 300px;
+            position: absolute;
+            left: 490px;
+            top: 1350px;
+            font-size: 15px;
+            color: rgb(3, 3, 3);
+        }
+
+        #div4 {
+            height: 200px;
+            width: 300px;
+            position: absolute;
+            left: 850px;
+            top: 1350px;
+            font-size: 15px;
+            color: rgb(3, 3, 3);
+        }
+
+        #div5 {
+            height: 500px;
+            width: 700px;
+            background-color: bisque;
+            position: absolute;
+            left: 0%;
+            top: 1550px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        #v1 {
+            position: absolute;
+            top: 30%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+            color: rgb(3, 3, 3);
+            font-size: 15px;
+            font-weight: lighter;
+        }
+
+        #v2 {
+            position: absolute;
+            top: 40%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+            color: rgb(3, 3, 3);
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        #v3 {
+            position: absolute;
+            top: 60%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+            color: rgb(3, 3, 3);
+            font-size: 15px;
+            font-weight: lighter;
+        }
+
+        #b2 {
+            position: absolute;
+            top: 80%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: brown;
+            color: white;
+            border: 2px solid brown;
+            cursor: pointer;
+        }
+
+        #div6 {
+            height: 500px;
+            width: 500px;
+            position: absolute;
+            top: 1550px;
+            right: 70px;
+        }
+        #div7 {
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            top: 1650px;
+            right: 30%;
+        }
+        #div8 {
+            height: 800px;
+            width: 800px;
+            position: absolute;
+            top: 2100px;
+            left: 0%;
+            background-color:lightgray;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #div8 h4{
+            color: rgb(3, 3, 3);
+            font-size: 15px;
+            font-weight: lighter;
+        }
+        #div8 p{
+            color: rgb(3, 3, 3);
+            font-size: 15px;
+            font-weight: lighter;
+        }
+        #div9{
+            height: 1000px;
+            width: 700px;
+            position: absolute;
+            top: 2100px;
+            right: 0%;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="p1">Perfumery Landing</div>
+            <div class="p2">
+                <a href="">Product</a>
+                <a href="">Contact</a>
+                <a href="">About</a>
+                <a href="">Blog</a>
+                <a href="">Landing</a>
+                <a href="">Shop</a>
+                <a href="">Home</a>
+                <i class="fa-solid fa-cart-shopping" style="color: rgb(30, 48, 80);"></i>
+            </div>
+        </nav>
+    </header>
+    <div class="image">
+        <div id="im1">
+            <img src="https://www.thelist.com/img/gallery/best-perfumes-with-jasmine-notes/intro-1678222246.jpg"
+                alt="perfume" height="700px" width="100%">
+            <h3>WELCOME TO DIVI</h3>
+            <p>Elegence Fragrence<br> Company</p>
+            <button id="b1">SHOP ONLINE ></button>
+        </div>
+        <div id="im2">
+            <img src="https://thumbs.dreamstime.com/b/elegant-perfume-bottle-gradient-backdrop-luxury-fragrance-concept-sparkling-glass-details-perfect-beauty-stunning-305375923.jpg"
+                alt="perfume" height="300px" width="400px">
+            <h3>2026 Collection</h3>
+            <h2>Extra</h2>
+            <h4>shop ></h4>
+        </div>
+        <div id="im3">
+            <img src="https://static.vecteezy.com/system/resources/previews/018/747/695/large_2x/a-chic-bottle-of-expensive-perfume-or-toilet-water-on-a-marble-background-with-white-flowers-top-view-an-empty-mock-up-of-the-bottle-advertising-photo.jpg"
+                alt=" perfume" height="300px" width="400px">
+            <h3>2026 Collection</h3>
+            <h2>Nexus</h2>
+            <h4>shop ></h4>
+        </div>
+        <br>
+        <br>
+        <div>
+            <div id="div1">
+                <img src="D.png" alt="D letter" height="300px" width="300px">
+            </div>
+            <div id="div2">
+                <h2>
+                    “Dit is ons eigen huis dichtbij het strand, op 10 minuten<br>
+                    rijden van het Stock kantoor in Haarlem. ”
+                </h2>
+            </div>
+            <div id="div3">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu.
+                </p>
+            </div>
+            <div id="div4">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolo
+                </p>
+            </div>
+        </div>
+        <div id="div5">
+            <p id="v1">
+                NEW
+            </p>
+            <p id="v2">Summer 2026 <br>Collections</p>
+            <p id="v3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur</p>
+            <button id="b2">SHOP NOW ></button>
+        </div>
+        <div id="div6">
+            <img src="https://images.pexels.com/photos/755992/pexels-photo-755992.jpeg?cs=srgb&dl=pexels-jessbaileydesign-755992.jpg&fm=jpg"
+                height="500px" width="500px">
+        </div>
+        <div id="div7">
+            <img src="https://static.vecteezy.com/system/resources/previews/026/843/126/large_2x/stylish-perfume-bottles-that-are-beautiful-elegant-modern-and-sparkling-it-is-suitable-for-product-promotion-or-as-a-poster-element-ai-image-generate-free-photo.jpg"
+                height="300px" width="300px">
+        </div>
+        <div id="div8">
+            <h4>Divi 4.0</h4>
+            <p>Lorem Ipsum Dolor</p>
+            <hr>
+            <p>Amet Sit</p>
+            <hr>
+            <p>Consectetur Sed in Nulla</p>
+            <hr>
+            <p> SHOP NOW</p>
+        </div>
+        <div id="div9">
+            <img src="https://cdn.pixabay.com/photo/2017/03/14/11/41/perfume-2142824_1280.jpg" height="1000px" width="700px">
+        </div>
+        
+
+</body>
+
+</html>

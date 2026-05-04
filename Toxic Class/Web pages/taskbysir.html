@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: beige;
+
+        }
+        header nav{
+            background-color: black;
+            height: 80px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        header>nav>div:first-child>a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        header>nav>div:nth-child(2)>a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            width: 200px;
+            justify-content: space-evenly;
+        }
+        #div1{
+            height: 500px;
+            width: 600px;
+            background-color: brown;
+            background-size: 600px 500px;
+            animation-name: slide;
+            animation-timing-function: linear;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes slide {
+            0%{
+                background-image: url(D.png);
+            }
+            25%{
+                background-image: url(tab.jpg);
+            }
+            50%{
+                background-image: url(puma2.jpg);
+            }
+            75%{
+                background-image: url(puma_img.jpg);
+            }
+            100%{
+                background-image: url(bike.jpg);
+            }
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="">Home</a>
+            </div>
+            <div>
+                <a href="">Services</a>
+                <a href="">About US</a>
+            </div>
+        </nav>
+    </header>
+    <div>
+        <div id="div1"></div>
+    </div>
+    
+</body>
+</html>

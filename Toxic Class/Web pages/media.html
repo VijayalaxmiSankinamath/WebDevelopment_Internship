@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+        }
+        nav{
+            display: flex;
+            height: 80px;
+            width: 100%;
+            background-image: linear-gradient(to right,rgb(238, 255, 0),rgb(227, 32, 32));
+            justify-content: space-around;
+            align-items: center;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+
+        }
+        nav>div:nth-child(2){
+            display: flex;
+            justify-content: space-around;
+            width: 500px;
+            font-size: 25px;
+        }
+        nav>div>:nth-child(1)>a{
+            font-size: 35px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: white;
+        }
+        main{
+            height: 90vh;
+            width: 100%;
+            background-image: linear-gradient(to right,aqua,black);
+        }
+        main>p{
+            color: white;
+            position: absolute;
+            left: 300px;
+            top: 400px;
+            font-size: 40px;
+        }
+        main>p>span{
+            font-weight: bolder;
+            font-size: 45px;
+
+        }
+        main>button{
+            padding: 14px 40px;
+            position: absolute;
+            bottom: 180px;
+            /* bottom:300px; */
+            left: 300px;
+            background: transparent;
+            border: 3px solid white;
+            transition: all 0.5s linear 0s;
+        }
+        main>button:hover{
+            background-color: rgb(69, 67, 67);
+            cursor: pointer;
+
+        }
+        @media screen and (0px>width<568px){
+            nav{
+                width: 100%;
+            }
+            nav>div:nth-child(2){
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+            main>p{
+                position: relative;
+                top: 100px;
+                left: 10px;
+            }
+            main>button{
+                position: relative;
+                left: 50px;
+                top: 150px;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="">Introspect</a>
+            </div>
+            <div>
+                <a href="">Home</a>
+                <a href="">Generic</a>
+                <a href="">Elements</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <p><span>Introspect:</span> A free + fully responive<br>
+        site template by TEMPLATED</p>
+            <button>GET STARTED</button>
+    </main>
+    
+</body>
+</html>

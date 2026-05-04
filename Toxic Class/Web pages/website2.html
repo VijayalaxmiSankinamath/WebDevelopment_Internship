@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: rgb(244, 245, 248);
+            height: 80px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+
+        .p1 {
+            color: rgb(21, 19, 19);
+            font-size: 30px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        .p2 a {
+            color: rgb(21, 20, 20);
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        nav .fa-cart-shopping {
+            font-size: 25px;
+            color: rgb(21, 20, 20);
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        #div1 {
+            height: 800px;
+            width: 760px;
+            position: absolute;
+            left: 0;
+            top: 80px;
+        }
+
+        #div11 {
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            left: 24%;
+            top: 300px;
+        }
+
+        #div2 {
+            height: 800px;
+            width: 760px;
+            position: absolute;
+            right: 0;
+            top: 80px;
+        }
+
+        #btn1 {
+            height: 50px;
+            width: 150px;
+            background-color: white;
+            color: orangered;
+            left: 38%;
+            top: 630px;
+            position: absolute;
+            text-transform: uppercase;
+        }
+
+        #hi1 {
+            position: absolute;
+            left: 38%;
+            top: 150px;
+            font-size: 55px;
+            color: white;
+        }
+
+        #para1 {
+            position: absolute;
+            left: 20%;
+            top: 250px;
+            font-size: 25px;
+            color: white;
+        }
+
+        #div3 {
+            height: 300px;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 880px;
+            background-color: rgb(244, 245, 248);
+        }
+
+        #div3 h2 {
+            position: absolute;
+            left: 15%;
+            padding-top: 50px;
+            font-size: 50px;
+
+        }
+
+        #div3 p {
+            position: absolute;
+            left: 15%;
+            top: 250px;
+            font-size: 20px;
+            width: 700px;
+        }
+
+        #div3 h5 {
+            position: absolute;
+            right: 15%;
+            top: 50px;
+            font-size: 20px;
+            border: 5px solid blue;
+            padding: 50px;
+            font-weight: lighter;
+
+        }
+
+        #div3 h5 b {
+            font-size: 15px;
+            border: 2px solid red;
+            padding: 10px;
+            font-weight: lighter;
+        }
+
+        #div4 {
+            height: 700px;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 1500px;
+        }
+
+        #div5 {
+            height: 750px;
+            width: 500px;
+            position: absolute;
+            left: 8%;
+            top: 2300px;
+        }
+
+        #div6 {
+            height: 800px;
+            width: 400px;
+            position: absolute;
+            left: 45%;
+            top: 2300px;
+        }
+
+        #div6 b {
+            color: orangered;
+            font-size: 15px;
+            font-weight: lighter;
+        }
+        #div7 {
+            height: 800px;
+            width: 400px;
+            position: absolute;
+            right: 0;
+            top: 2300px;
+        }
+        #div7 b {
+            color: orangered;
+            font-size: 15px;
+            font-weight: lighter;
+        }
+        #div8{
+            height: 500px;
+            width: 900px;
+            position: absolute;
+            left: 20%;
+            top: 3600px;
+
+
+        }
+       #div8 .fa-quote-left{
+            font-size: 50px;
+            color: rgb(242, 244, 247);
+        }
+        #div8 b{
+            position: absolute;
+            left: 41%;
+            top: 50px;
+            font-size: 50px;
+            color: rgb(242, 244, 247);
+            font-weight: bolder;
+        }
+        #div8 p{
+            position: absolute;
+            left: 8%;
+            top:150px;
+            font-size: 35px;
+            color: rgb(242, 244, 247);
+            font-weight: bolder;
+        }
+        #div9{
+            height: 700px;
+            width: 500px;
+            position: absolute;
+            left: 0.5%;
+            top: 4200px;
+        }
+        #div90{
+            height: 700px;
+            width: 500px;
+            position: absolute;
+            right: 33.3%;
+            top: 4200px;
+        }
+        #div91{
+            height: 700px;
+            width: 500px;
+            position: absolute;
+            right: 0;
+            top: 4200px;
+        }
+        #div93{
+            height: 300px;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 5000px;
+            background-color: rgb(244, 245, 248);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #div93 b{
+            font-size: 30px;
+            color: orangered;
+        }
+        #div93 p{
+            font-size: 20px;
+            color: rgb(21, 20, 20);
+        }
+        #div93 button{
+            height: 50px;
+            width: 150px;
+            background-color:black;
+            color: white;
+            text-transform: uppercase;
+            margin-top: 20px;
+        }
+        #div93 i{
+            font-size: 25px;
+            color: rgb(21, 20, 20);
+            margin-top: 20px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        #div94{
+            height: 100px;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 5250px;
+            background-color: rgb(244, 245, 248);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    footer {
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;  /* CHANGE THIS */
+     align-items: center; 
+     padding: 0 40px; 
+     color: white; 
+     position: absolute;
+    top: 5350px;   
+    left: 0; 
+}
+
+.icons i{ 
+    margin-left: 15px; 
+    color: rgb(242, 245, 248); 
+ } 
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="p1">Perfumery Landing</div>
+            <div class="p2">
+                <a href="">Product</a>
+                <a href="">Contact</a>
+                <a href="">About</a>
+                <a href="">Blog</a>
+                <a href="">Landing</a>
+                <a href="">Shop</a>
+                <a href="">Home</a>
+                <i class="fa-solid fa-cart-shopping" style="color: rgb(30, 48, 80);"></i>
+            </div>
+        </nav>
+    </header>
+    <div id="div1">
+        <img src="https://img.freepik.com/premium-photo/old-orange-paper-backgrounds_196038-13211.jpg" alt=""
+            height="800px" width="760px">
+        <h1 id="hi1">DIVI</h1>
+        <p id="para1">Welcome to Divi Eatery in San Francisco</p>
+        <div id="div11">
+            <img src="https://www.foodrepublic.com/img/gallery/its-time-to-build-better-sandwiches-by-layering-them-the-right-way/l-intro-1742546569.jpg"
+                alt="" height="300px" width="400px">
+        </div>
+        <button id="btn1">Order Online</button>
+    </div>
+    <div id="div2">
+        <img src="https://st2.depositphotos.com/1022904/6244/i/950/depositphotos_62443779-stock-photo-healthy-veggie-panini-sandwiches-with.jpg"
+            alt="" height="800px" width="760px">
+    </div>
+    <div id="div3">
+        <h2>Dine In, Order Out, Book a<br> Special Event. We Also<br> Offer Catering!</h2>
+        <p>
+            Indulge in a culinary journey like no other at Divi. Nestled in the heart of California, we are a haven for
+            food enthusiasts seeking exquisite flavors and a memorable dining experience. Our restaurant combines a warm
+            and inviting ambiance with impeccable service to create the perfect setting for any occasion.
+        </p>
+        <h5>
+            Opening Hours<br>
+            <br>
+            Mon: 11am – 9pm<br>
+            <br>
+
+            Tue: 11am – 9pm<br>
+            <br>
+            Wed: Closed<br>
+            <br>
+
+            Thu: 11am – 9pm <br>
+            <br>
+            Fri: 11am – 10pm <br>
+            <br>
+            S&S: 12am – 10pm <br>
+            <br>
+
+            <b>RESERVE A TABLE</b>
+
+        </h5>
+    </div>
+    <div id="div4">
+        <img src="https://static.vecteezy.com/system/resources/previews/038/972/466/non_2x/ai-generated-veg-steam-momo-nepalese-traditional-dish-momo-stuffed-with-vegetables-and-then-cooked-and-served-with-sauce-over-a-rustic-wooden-background-selective-focus-photo.jpg"
+            alt="" height="700px" width="100%">
+    </div>
+    <div id="div5">
+        <img src="https://lazypanrecipes.com/wp-content/uploads/2025/12/VeggiePacked-Western-Omelet.jpg" alt=""
+            height="750px" width="500px">
+    </div>
+    <div id="div6">
+        <h2>Starters</h2>
+        <br>
+        <br>
+        <h3>
+            Lorem Ipsum Dolor Sit Amet
+            <br><br>
+            <b>$15.95</b> <br><br>
+        </h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Donec sed finibus nisi, sed dictum<br> eros.
+        </p><br><br><br>
+        <h3>
+            Donec Sed Finibus Nisi
+            <br><br>
+
+            <b>$19.95</b><br><br>
+        </h3>
+        <p>
+            Quisque aliquet velit sit amet sem interdum<br> faucibus. In feugiat aliquet mollis etiam tincidunt<br>
+            ligula.
+        </p><br><br><br>
+        <h2>Lunch</h2><br><br>
+        <h3>Quisque Aliquet Velit Sit Amet</h3><br><br>
+        <b>$9.95</b><br><br>
+        <p>Luctus lectus non quisque turpis bibendum<br> posuere. Morbi tortor nibh, fringilla sed pretium<br> sit amet.</p>
+        <br><br>
+        <h3>Morbi Tortor Nibh Fringilla</h3><br><br>
+        <b>$22.95</b><br><br>
+        <p>In non pulvinar purus. Curabitur nisi odio,<br> blandit et elit at, suscipit pharetra efficitur elit.</p><br><br>
+        <h3>Curabitur Non Bibendum Ligula</h3><br><br>
+        <b>$12.95</b><br><br>
+        <p>Nisl massa, ultrices vitae ornare sit amet,<br> ultricies eget orci. Sed vitae nulla et justo<br> pellentesque congue
+            nec eu risus.</p><br><br>
+        <h3>In Non Pulvinar Purus</h3><br><br>
+        <b>$15.95</b><br><br>
+        <p>Ac feugiat ante. Donec ultricies lobortis eros, nec<br> auctor nisl semper ultricies. Aliquam sodales<br> nulla
+            dolor.</p>
+
+
+    </div>
+    <div id="div7">
+        <h2>Dinner</h2><br><br>
+        <h3>Curabitur Nisi Odio Vel</h3><br><br>
+        <b>$35.95</b><br><br>
+        <p>Quis blandit erat. Donec laoreet libero non<br> metus volutpat consequat in vel metus. Sed non<br> augue id felis
+        pellentesque.</p><br><br>
+        <h3>Sed Vitae Nulla Et Justo</h3><br><br>
+        <b>$49.95</b><br><br>
+        <p>Semper leo et sapien lobortis facilisis aliquam<br> feugiat ut diam non tempus et malesuada.</p><br><br>
+        <h3>Quisque Aliquet Velit Sit Amet</h3><br><br>
+        <b>$29.95</b><br><br>
+        <p>Fermentum nulla non justo aliquet, quis vehicula<br> quam consequat duis ut hendrerit.</p><br><br>
+        <h2>Dessert</h2><br><br><br>
+        <h3>Pellentesque Congue Nec</h3><br><br>
+        <b>$12.95</b><br><br>
+        <p>>Vitae consequat augue. Vivamus eget dolor vel<br> quam condimentum sodales in bibendum odio urna sit amet.</p><br><br>
+        <h3>Donec Ultricies Lobortis</h3><br><br>
+        <b>$19.95</b><br><br>
+        <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Donec sed finibus nisi, sed dictum<br> eros.</p><br><br>
+        <h3>Eros Nec Auctor Nisl</h3><br><br>
+        <b>$17.95</b><br><br>
+        <p>Quisque aliquet velit sit amet sem interdum <br>faucibus. In feugiat aliquet mollis etiam tincidunt<br> ligula.</p>
+    </div>
+    <div id="div8">
+        <img src="https://png.pngtree.com/thumb_back/fw800/background/20231008/pngtree-soothing-blue-paper-texture-background-image_13602978.png"
+            alt="" height="500px" width="900px">
+            <b>66</b>
+          <p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Incidunt iusto magnam,<br> dolores quidem optio laboriosam.</p>
+    </div>
+    <diV id="div9">
+        <img src="https://thumbs.dreamstime.com/b/very-tall-layered-burger-symbolizing-gluttony-special-offer-fast-food-very-tall-layered-burger-symbolizing-gluttony-275003892.jpg" alt="" height="700px" width="500px">
+    </diV>
+    <div id="div90">
+        <img src="https://static.india.com/wp-content/uploads/2023/08/Onam-2023_-9-Mouth-Watering-Onam-Special-Sadhya-Dishes.png" alt="" height="700px" width="500px">
+    </div>
+    <div id="div91">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&w=1000&q=80" alt="" height="700px" width="500px">
+    </div>
+    <div id="div93">
+        <b>Dine In. Order Out. Cater.</b><br><br>
+        <p>Open Every Day. 1234 Divi st. San Francisco, CA 93151</p><br><br>
+        <button>ORDER ONLINE</button><br><br>
+        </div>
+        <div id="div94">
+        <i class="fa-brands fa-facebook-f" style="color: rgb(30, 48, 80);"></i>&nbsp;&nbsp;
+        <i class="fa-brands fa-x-twitter" style="color: rgb(30, 48, 80);"></i>&nbsp;&nbsp;
+        <i class="fa-brands fa-instagram" style="color: rgb(30, 48, 80);"></i>
+    </div>
+    
+    <footer>
+        <b>Designed by Elegant Themes | Powered by WordPress</b>
+        <i class="fa-brands fa-facebook-f" style="color: rgb(245, 246, 247);"></i>
+        <i class="fa-brands fa-x-twitter" style="color: rgb(246, 247, 248);"></i>
+        <i class="fa-brands fa-instagram" style="color: rgb(242, 244, 247);"></i>
+
+    </footer>
+    </body>
+
+
+
+</html>
